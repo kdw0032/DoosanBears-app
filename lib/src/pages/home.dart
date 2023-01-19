@@ -35,8 +35,8 @@ class Home extends GetView<HomeController> {
           icon: const Icon(Icons.arrow_back),
         ),
         title: Image.asset(
-          'assets/bearstagram.png',
-          width: 150,
+          'assets/bearstagram2.png',
+          width: 180,
         ),
         actions: [
           GestureDetector(

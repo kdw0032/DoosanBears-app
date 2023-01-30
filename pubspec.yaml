@@ -103,6 +103,8 @@ flutter:
     - assets/emblem2.png
     - assets/cheer/
     - assets/bearstagram2.png
+    - assets/flag.jpg
+    - assets/flag2.jpg
     - lib/Doosan/icons/
 
   # An image asset can refer to one or more resolution-specific "variants", see

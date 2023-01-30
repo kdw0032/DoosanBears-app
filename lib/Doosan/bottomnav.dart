@@ -43,7 +43,7 @@ class _BottomNavState extends State<BottomNav> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.menu_sharp),
+            icon: Icon(Icons.menu_rounded),
             label: '메뉴',
           ),
         ],

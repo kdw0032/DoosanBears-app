@@ -26,7 +26,7 @@ class StaffPage extends StatelessWidget {
         child: Stack(
           children: [
             Container(
-              height: 5000,
+              height: 3550,
             ),
             const Positioned(
               top: 15,

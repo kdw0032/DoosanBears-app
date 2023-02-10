@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Doosan/src/pages/Information/1980.dart';
 import 'package:flutter_application_1/Doosan/src/pages/Information/1990.dart';
 import 'package:flutter_application_1/Doosan/src/pages/Information/2000.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Information/2010.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Information/2020.dart';
+import 'package:flutter_application_1/Doosan/src/pages/Information/Season2010.dart';
+import 'package:flutter_application_1/Doosan/src/pages/Information/Season20202.dart';
 
 class Story extends StatelessWidget {
   const Story({Key? key}) : super(key: key);
@@ -50,7 +50,7 @@ class Story extends StatelessWidget {
           unselectedLabelColor: Colors.grey[400],
         ),
         views: const [
-          Season2020(),
+          Season20202(),
           Season2010(),
           Season2000(),
           Season1990(),

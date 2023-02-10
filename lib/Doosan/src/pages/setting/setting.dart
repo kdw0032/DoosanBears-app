@@ -18,7 +18,7 @@ class Setting extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 224, 224, 224),
+      backgroundColor: const Color.fromARGB(106, 247, 245, 245),
       appBar: NewGradientAppBar(
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,

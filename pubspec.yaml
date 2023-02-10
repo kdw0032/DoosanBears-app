@@ -66,6 +66,7 @@ dependencies:
   cached: ^1.6.0
   network: ^1.0.0-nullsafety.0
   cached_network_image: ^3.2.1
+  flutter_naver_login: ^1.7.0
 
 dev_dependencies:
   flutter_test:
@@ -105,6 +106,10 @@ flutter:
     - assets/bearstagram2.png
     - assets/flag.jpg
     - assets/flag2.jpg
+    - assets/Logo/
+    - assets/story/
+    - assets/naver/
+    - assets/story/nipert.jpg
     - lib/Doosan/icons/
 
   # An image asset can refer to one or more resolution-specific "variants", see

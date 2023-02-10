@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Doosan/Calender/Calender.dart';
 import 'package:flutter_application_1/Doosan/Stadium/stadium.dart';
+import 'package:flutter_application_1/Doosan/screen/chat_screen.dart';
 import 'package:flutter_application_1/Doosan/src/pages/setting/setting.dart';
 import 'package:flutter_application_1/Doosan/src/pages/ticket/BearsHome.dart';
 
@@ -18,7 +19,7 @@ class _BottomNavState extends State<BottomNav> {
   final screens = [
     const BearsHome(),
     const Gameday(),
-    const StadiumPage(),
+    const MessageListScreen(),
     const Setting(),
   ];
 
@@ -39,8 +40,8 @@ class _BottomNavState extends State<BottomNav> {
             label: '경기일정',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
+            icon: Icon(Icons.chat_bubble_outline_rounded),
+            label: '베어스 톡',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.menu_rounded),

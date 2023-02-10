@@ -6,6 +6,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_application_1/Doosan/bottomnav.dart';
 import 'package:flutter_application_1/Doosan/config/pallete.dart';
 import 'package:flutter_application_1/Doosan/kakao/kakao_login.dart';
+import 'package:flutter_application_1/Doosan/screen/chat_screen.dart';
 import 'package:flutter_application_1/Doosan/src/pages/ticket/BearsHome.dart';
 import 'package:flutter_application_1/main.dart';
 import 'package:flutter_application_1/Doosan/main2.dart';
@@ -427,7 +428,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return BottomNav();
+                                return MessageListScreen();
                               }),
                             );
                           }
@@ -455,7 +456,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                             Navigator.push(
                               context,
                               Transition(
-                                  child: const BottomNav(),
+                                  child: MessageListScreen(),
                                   transitionEffect: TransitionEffect.FADE),
                             );
                           }

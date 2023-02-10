@@ -2,8 +2,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Doosan/Calender/Calender.dart';
+import 'package:flutter_application_1/Doosan/Login/sample_scrren.dart';
 import 'package:flutter_application_1/Doosan/bears_home.dart';
 import 'package:flutter_application_1/Doosan/bottomnav.dart';
+import 'package:flutter_application_1/Doosan/screen/LoginSignUpScreen.dart';
 import 'package:flutter_application_1/Doosan/src/Dooroot.dart';
 import 'package:flutter_application_1/Doosan/src/controller/root_controller.dart';
 import 'package:flutter_application_1/Doosan/src/pages/home/Detail_Page.dart';
@@ -45,7 +47,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       initialBinding: InitBindings(),
-      home: const BottomNav(),
+      home: const LoginSignupScreen(),
     );
   }
 }

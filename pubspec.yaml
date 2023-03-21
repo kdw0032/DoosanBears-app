@@ -67,6 +67,8 @@ dependencies:
   network: ^1.0.0-nullsafety.0
   cached_network_image: ^3.2.1
   flutter_naver_login: ^1.7.0
+  carousel_slider: ^4.2.1
+  carousel_indicator: ^1.0.6
 
 dev_dependencies:
   flutter_test:
@@ -97,6 +99,11 @@ flutter:
     - assets/player/b/
     - assets/player/68242.jpg
     - assets/player/67202.jpg
+    - assets/Player23/Coach/
+    - assets/Player23/Pitcher/
+    - assets/Player23/Catch/
+    - assets/Player23/Infiled/
+    - assets/Player23/Outfiled/
     - assets/facebook.png
     - assets/lgemblem.png
     - assets/ticket.png

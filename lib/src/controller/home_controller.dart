@@ -8,10 +8,12 @@ class HomeController extends GetxController {
   void onInit() {
     super.onInit();
     _loadFeedList();
+    update();
   }
 
-  void _loadFeedList() async {
+  Future<void> _loadFeedList() async {
     var feedList = await PostRepository.loadFeedList();
     postList.addAll(feedList);
+    update();
   }
 }

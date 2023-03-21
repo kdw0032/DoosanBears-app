@@ -154,7 +154,7 @@ class UploadController extends GetxController {
         title: '포스트',
         message: '포스팅이 완료 되었습니다.',
         okCallback: () {
-          Get.to(const InstaBottomNav());
+          Get.until((route) => Get.currentRoute == '/');
         },
       ),
     );

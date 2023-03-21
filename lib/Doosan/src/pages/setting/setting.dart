@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_application_1/Doosan/Calender/Calender.dart';
-import 'package:flutter_application_1/Doosan/player/player.dart';
+import 'package:flutter_application_1/Doosan/player/playerUI.dart';
 import 'package:flutter_application_1/Doosan/src/pages/Cheer/cheer.dart';
 import 'package:flutter_application_1/Doosan/src/pages/Information/info.dart';
 import 'package:new_gradient_app_bar/new_gradient_app_bar.dart';

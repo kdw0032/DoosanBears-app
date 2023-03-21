@@ -24,11 +24,11 @@ class Root extends GetView<AuthController> {
               future: controller.loginuser(user.data!.uid),
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
-                  return const InstaBottomNav();
+                  return const App();
                 } else {
                   return Obx(
                     () => controller.user.value.uid != null
-                        ? const InstaBottomNav()
+                        ? const App()
                         : SignupPage(uid: user.data!.uid),
                   );
                 }

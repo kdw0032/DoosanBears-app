@@ -1,4 +1,4 @@
-// ignore_for_file: unused_import, implementation_imports, avoid_print, unused_field
+// ignore_for_file: unused_import, implementation_imports, avoid_print, unused_field, avoid_unnecessary_containers
 
 import 'package:contained_tab_bar_view/contained_tab_bar_view.dart';
 import 'package:flutter/material.dart';
@@ -8,7 +8,7 @@ import 'package:flutter_application_1/Doosan/Stadium/stadium.dart';
 import 'package:flutter_application_1/Doosan/Youtube/youtube2.dart';
 import 'package:flutter_application_1/Doosan/Youtube/youtube3.dart';
 import 'package:flutter_application_1/Doosan/Youtube/youtube4.dart';
-import 'package:flutter_application_1/Doosan/player/player.dart';
+import 'package:flutter_application_1/Doosan/player/playerUI.dart';
 import 'package:flutter_application_1/Doosan/Youtube/youtube1.dart';
 import 'package:flutter_application_1/Doosan/src/pages/media/media.dart';
 import 'package:flutter_application_1/Doosan/src/pages/staff/staff.dart';
@@ -18,8 +18,9 @@ import 'package:kakao_flutter_sdk/kakao_flutter_sdk.dart';
 import 'package:kakao_flutter_sdk_talk/kakao_flutter_sdk_talk.dart';
 import 'package:kakao_flutter_sdk_user/kakao_flutter_sdk_user.dart' as kakao;
 import 'package:kakao_flutter_sdk_user/src/model/user.dart' as kakao;
-import 'package:new_gradient_app_bar/new_gradient_app_bar.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:carousel_slider/carousel_slider.dart';
+import 'package:carousel_indicator/carousel_indicator.dart';
 
 class MyBearsHome extends StatelessWidget {
   const MyBearsHome({Key? key}) : super(key: key);
@@ -40,7 +41,30 @@ class BearsHome extends StatefulWidget {
   _BearsHomeState createState() => _BearsHomeState();
 }
 
-class _BearsHomeState extends State {
+class _BearsHomeState extends State<BearsHome> {
+  int pageIndex = 0;
+
+  // ignore: prefer_final_fields
+  List<Widget> _demo = [
+    Container(
+      child: Image.asset(
+        'assets/doosanticket.png',
+        height: 200,
+      ),
+    ),
+    Container(
+      child: Image.asset(
+        'assets/doosanticket.png',
+        height: 200,
+      ),
+    ),
+    Container(
+      child: Image.asset(
+        'assets/doosanticket.png',
+        height: 200,
+      ),
+    ),
+  ];
   @override
   void dispose() {
     super.dispose();
@@ -74,148 +98,168 @@ class _BearsHomeState extends State {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: NewGradientAppBar(
+      appBar: AppBar(
         title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+            const Padding(padding: EdgeInsets.all(20)),
             Image.asset(
               'assets/logo5.png',
               height: 40,
             ),
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.shopping_cart_outlined),
+            ),
           ],
         ),
-        gradient: const LinearGradient(
-          colors: [
-            Color.fromARGB(255, 41, 40, 40),
-            Color.fromARGB(255, 10, 4, 32),
-            Color.fromARGB(255, 10, 4, 32),
-            Color.fromARGB(255, 10, 4, 32),
-            Color.fromARGB(255, 10, 4, 32),
-            Color.fromARGB(255, 39, 38, 38),
-          ],
-        ),
+        backgroundColor: const Color.fromARGB(255, 6, 3, 17),
         elevation: 0,
         automaticallyImplyLeading: false,
       ),
       body: SingleChildScrollView(
-        child: Stack(
-          children: <Widget>[
-            Container(
-              height: 300,
-              decoration: const BoxDecoration(
-                color: Color.fromARGB(255, 10, 4, 32),
-              ),
-            ),
-            Container(
-              height: 1000,
-            ),
-            Positioned(
-              top: 50,
-              right: -20,
-              width: 180,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(50.0),
-                child: const Image(
-                  image: AssetImage('assets/emblem.png'),
-                  fit: BoxFit.cover,
+        child: SizedBox(
+          height: 2000,
+          child: Stack(
+            children: [
+              Positioned(
+                top: 0,
+                left: 0,
+                child: Container(
+                  width: 396,
+                  height: 200,
+                  color: const Color.fromARGB(255, 6, 3, 17),
                 ),
               ),
-            ),
-            Positioned(
-              top: 62,
-              left: 50,
-              child: Text(
-                _username,
-                style: const TextStyle(
-                    fontSize: 30,
+              Positioned(
+                top: 40,
+                left: 20,
+                child: Text(
+                  _username,
+                  style: const TextStyle(
+                    fontSize: 23,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 91, 151, 253)),
+                    color: Colors.white,
+                  ),
+                ),
               ),
-            ),
-            const Positioned(
-              top: 62,
-              left: 135,
-              child: Text(
-                '님',
-                style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.normal,
-                    color: Colors.white),
+              const Positioned(
+                top: 40,
+                left: 90,
+                child: Text(
+                  '님',
+                  style: TextStyle(
+                      fontSize: 23,
+                      fontWeight: FontWeight.normal,
+                      color: Colors.white),
+                ),
               ),
-            ),
-            const Positioned(
-              top: 95,
-              left: 50,
-              child: Text(
-                '환영합니다!',
-                style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.normal,
-                    color: Colors.white),
+              const Positioned(
+                top: 70,
+                left: 20,
+                child: Text(
+                  '다가오는 경기입니다.',
+                  style: TextStyle(
+                      fontSize: 23,
+                      fontWeight: FontWeight.normal,
+                      color: Colors.white),
+                ),
               ),
-            ),
-            Positioned(
-              top: 10,
-              right: 20,
-              child: GestureDetector(
-                onTap: () async {
-                  final url = Uri.parse(
-                    "http://ticket.interpark.com/m-ticket/Sports/GoodsInfo?SportsCode=07001&TeamCode=PB004",
-                  );
-                  launchUrl(url, mode: LaunchMode.externalApplication);
-                },
+              Positioned(
+                top: 118,
+                left: 15,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text(
+                    '예매 가능한 경기',
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                top: 120,
+                left: 120,
+                child: IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.arrow_forward_ios,
+                    color: Colors.white,
+                    size: 15,
+                  ),
+                ),
+              ),
+              Positioned(
+                top: 150,
+                left: 0,
+                child: Container(
+                  width: 396,
+                  height: 285,
+                  color: const Color.fromARGB(255, 6, 3, 17),
+                  child: Center(
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          height: 250,
+                          width: double.infinity,
+                          child: PageView(
+                            children: _demo,
+                            onPageChanged: (index) {
+                              setState(() {
+                                pageIndex = index;
+                              });
+                            },
+                          ),
+                        ),
+                        CarouselIndicator(
+                          count: _demo.length,
+                          index: pageIndex,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              const Positioned(
+                top: 200,
+                left: 130,
+                child: Text(
+                  '03.19.일 13:00 광주',
+                  style: TextStyle(color: Colors.white, fontSize: 15),
+                ),
+              ),
+              Positioned(
+                top: 240,
+                left: 30,
                 child: Image.asset(
-                  'lib/Doosan/icons/ticket.png',
-                  width: 30,
-                  color: Colors.white,
+                  'assets/emblem.png',
+                  height: 80,
                 ),
               ),
-            ),
-            Positioned(
-              top: 200,
-              child: Container(
-                padding: const EdgeInsets.all(8.0),
-                color: Colors.white,
-                width: 395,
-                height: 3000,
-                child: ContainedTabBarView(
-                  tabs: const [
-                    Text(
-                      '미디어',
-                      style: TextStyle(
-                          color: Colors.black, fontWeight: FontWeight.bold),
-                    ),
-                    Text(
-                      '티켓',
-                      style: TextStyle(
-                          color: Colors.black, fontWeight: FontWeight.bold),
-                    ),
-                    Text(
-                      '경기/중계',
-                      style: TextStyle(
-                          color: Colors.black, fontWeight: FontWeight.bold),
-                    ),
-                    Text(
-                      '구단',
-                      style: TextStyle(
-                          color: Colors.black, fontWeight: FontWeight.bold),
-                    ),
-                  ],
-                  views: [
-                    const MediaPage(),
-                    Container(
-                      color: Colors.blue,
-                    ),
-                    Container(
-                      color: Colors.blue,
-                    ),
-                    const StaffPage()
-                  ],
-                  onChange: (index) => print(index),
+              const Positioned(
+                top: 265,
+                left: 180,
+                child: Text(
+                  'VS',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20),
                 ),
               ),
-            ),
-          ],
+              Positioned(
+                top: 238,
+                left: 230,
+                child: Image.asset(
+                  'assets/kia.png',
+                  height: 90,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

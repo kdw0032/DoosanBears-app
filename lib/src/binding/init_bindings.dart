@@ -7,7 +7,7 @@ import 'package:get/get.dart';
 class InitBindings extends Bindings {
   @override
   void dependencies() {
-    // Get.put(BottomNavController(), permanent: true);
+    Get.put(BottomNavController(), permanent: true);
     Get.put(AuthController(), permanent: true);
   }
 

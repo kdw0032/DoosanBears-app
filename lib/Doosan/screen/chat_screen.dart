@@ -5,6 +5,7 @@ import 'dart:developer';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Doosan/screen/message_model.dart';
+import 'package:flutter_application_1/src/pages/upload.dart';
 
 class MessageListScreen extends StatefulWidget {
   const MessageListScreen({Key? key}) : super(key: key);
@@ -82,6 +83,12 @@ class _MessageListScreenState extends State<MessageListScreen> {
               child: TextField(
                 controller: controller,
                 decoration: InputDecoration(
+                  icon: IconButton(
+                      onPressed: () {
+                        const Upload();
+                      },
+                      icon: const Icon(Icons.add_box_outlined)),
+                  iconColor: Colors.black,
                   labelStyle: const TextStyle(fontSize: 15),
                   labelText: "내용을 입력하세요..",
                   fillColor: Colors.black,

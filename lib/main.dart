@@ -5,12 +5,14 @@ import 'package:flutter_application_1/Doosan/Calender/Calender.dart';
 import 'package:flutter_application_1/Doosan/Login/sample_scrren.dart';
 import 'package:flutter_application_1/Doosan/bears_home.dart';
 import 'package:flutter_application_1/Doosan/bottomnav.dart';
+import 'package:flutter_application_1/Doosan/BEARSTALK/BearstalkUi.dart';
 import 'package:flutter_application_1/Doosan/screen/LoginSignUpScreen.dart';
 import 'package:flutter_application_1/Doosan/src/Dooroot.dart';
 import 'package:flutter_application_1/Doosan/src/controller/root_controller.dart';
 import 'package:flutter_application_1/Doosan/src/pages/home/Detail_Page.dart';
 import 'package:flutter_application_1/Doosan/main2.dart';
 import 'package:flutter_application_1/Doosan/src/pages/ticket/BearsHome.dart';
+import 'package:flutter_application_1/Doosan/src/pages/ticket/slider.dart';
 import 'package:flutter_application_1/root.dart';
 import 'package:flutter_application_1/src/app.dart';
 import 'package:flutter_application_1/src/binding/init_bindings.dart';
@@ -47,7 +49,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       initialBinding: InitBindings(),
-      home: const LoginSignupScreen(),
+      home: const BottomNav(),
     );
   }
 }

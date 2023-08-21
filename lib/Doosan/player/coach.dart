@@ -1241,7 +1241,7 @@ class Coach extends StatelessWidget {
                   Navigator.push(
                       context,
                       Transition(
-                          child: const Player24(),
+                          child: const Player261(),
                           transitionEffect: TransitionEffect.FADE));
                 },
                 child: ClipRRect(

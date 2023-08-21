@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:contained_tab_bar_view/contained_tab_bar_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Doosan/BEARSTALK/Bearstalk.dart';

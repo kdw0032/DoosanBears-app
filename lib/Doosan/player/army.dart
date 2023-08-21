@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import, implementation_imports, unnecessary_import
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';

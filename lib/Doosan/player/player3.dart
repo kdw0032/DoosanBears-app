@@ -90,9 +90,9 @@ class Player27 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -187,7 +187,7 @@ class Player27 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -209,7 +209,7 @@ class Player27 extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const Setting()
+                  Setting()
                 ],
               ),
             ),
@@ -300,9 +300,9 @@ class Player28 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -397,7 +397,7 @@ class Player28 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -517,9 +517,9 @@ class Player29 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -614,7 +614,7 @@ class Player29 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -734,9 +734,9 @@ class Player30 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -831,7 +831,7 @@ class Player30 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -943,9 +943,9 @@ class Player31 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -1040,7 +1040,7 @@ class Player31 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -1184,9 +1184,9 @@ class Player32 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -1281,7 +1281,7 @@ class Player32 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -1425,9 +1425,9 @@ class Player33 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -1522,7 +1522,7 @@ class Player33 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -1634,9 +1634,9 @@ class Player34 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -1731,7 +1731,7 @@ class Player34 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -1851,9 +1851,9 @@ class Player35 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -1948,7 +1948,7 @@ class Player35 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -2060,9 +2060,9 @@ class Player36 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -2157,7 +2157,7 @@ class Player36 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -2269,9 +2269,9 @@ class Player37 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -2366,7 +2366,7 @@ class Player37 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -2478,9 +2478,9 @@ class Player38 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -2575,7 +2575,7 @@ class Player38 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -2703,9 +2703,9 @@ class Player39 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -2800,7 +2800,7 @@ class Player39 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -2911,9 +2911,9 @@ class Player40 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -3008,7 +3008,7 @@ class Player40 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -3120,9 +3120,9 @@ class Player41 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -3217,7 +3217,7 @@ class Player41 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -3361,9 +3361,9 @@ class Player42 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -3458,7 +3458,7 @@ class Player42 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -3578,9 +3578,9 @@ class Player43 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -3675,7 +3675,7 @@ class Player43 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -3794,9 +3794,9 @@ class Player44 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -3891,7 +3891,7 @@ class Player44 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -4027,9 +4027,9 @@ class Player45 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -4124,7 +4124,7 @@ class Player45 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -4236,9 +4236,9 @@ class Player46 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -4333,7 +4333,7 @@ class Player46 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -4461,9 +4461,9 @@ class Player47 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -4558,7 +4558,7 @@ class Player47 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -4678,9 +4678,9 @@ class Player48 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -4775,7 +4775,7 @@ class Player48 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -4887,9 +4887,9 @@ class Player49 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -4984,7 +4984,7 @@ class Player49 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -5096,9 +5096,9 @@ class Player50 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -5193,7 +5193,7 @@ class Player50 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -5305,9 +5305,9 @@ class Player51 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -5402,7 +5402,7 @@ class Player51 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -5514,9 +5514,9 @@ class Player52 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -5611,7 +5611,7 @@ class Player52 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -5723,9 +5723,9 @@ class Player53 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -5820,7 +5820,7 @@ class Player53 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -5940,9 +5940,9 @@ class Player54 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -6037,7 +6037,7 @@ class Player54 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -6149,9 +6149,9 @@ class Player55 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -6246,7 +6246,7 @@ class Player55 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -6358,9 +6358,9 @@ class Player56 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -6455,7 +6455,7 @@ class Player56 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -6567,9 +6567,9 @@ class Player57 extends StatelessWidget {
                         color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ],
-                views: [
+                views: const [
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,
@@ -6664,7 +6664,7 @@ class Player57 extends StatelessWidget {
                     ],
                   ),
                   Stack(
-                    children: const [
+                    children: [
                       Positioned(
                         top: 15,
                         left: 20,

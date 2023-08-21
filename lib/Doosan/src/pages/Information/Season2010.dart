@@ -1,4 +1,4 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, unused_import
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Doosan/src/pages/Information/2017.dart';

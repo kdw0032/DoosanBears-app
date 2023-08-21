@@ -1,22 +1,8 @@
 // ignore_for_file: unused_import, implementation_imports
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Doosan/Calender/Calender.dart';
-import 'package:flutter_application_1/Doosan/Login/sample_scrren.dart';
-import 'package:flutter_application_1/Doosan/bears_home.dart';
 import 'package:flutter_application_1/Doosan/bottomnav.dart';
-import 'package:flutter_application_1/Doosan/BEARSTALK/BearstalkUi.dart';
 import 'package:flutter_application_1/Doosan/screen/LoginSignUpScreen.dart';
-import 'package:flutter_application_1/Doosan/src/Dooroot.dart';
-import 'package:flutter_application_1/Doosan/src/controller/root_controller.dart';
-import 'package:flutter_application_1/Doosan/src/pages/home/Detail_Page.dart';
-import 'package:flutter_application_1/Doosan/main2.dart';
-import 'package:flutter_application_1/Doosan/src/pages/ticket/BearsHome.dart';
-import 'package:flutter_application_1/Doosan/src/pages/ticket/slider.dart';
-import 'package:flutter_application_1/root.dart';
-import 'package:flutter_application_1/src/app.dart';
-import 'package:flutter_application_1/src/binding/init_bindings.dart';
-import 'package:flutter_application_1/src/instaBottomNav.dart';
 import 'package:get/get.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -48,8 +34,8 @@ class MyApp extends StatelessWidget {
           titleTextStyle: TextStyle(color: Colors.black),
         ),
       ),
-      initialBinding: InitBindings(),
-      home: const BottomNav(),
+      // initialBinding: InitBindings(),
+      home: const LoginSignupScreen(),
     );
   }
 }

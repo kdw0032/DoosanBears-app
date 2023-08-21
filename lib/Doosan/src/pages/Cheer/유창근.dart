@@ -75,9 +75,9 @@ class Cheer2 extends StatelessWidget {
                             color: Colors.black, fontWeight: FontWeight.bold),
                       ),
                     ],
-                    views: [
+                    views: const [
                       Stack(
-                        children: const [
+                        children: [
                           Positioned(
                             top: 15,
                             left: 20,
@@ -200,7 +200,7 @@ class Cheer2 extends StatelessWidget {
                         ],
                       ),
                       Stack(
-                        children: const [
+                        children: [
                           Positioned(
                             top: 15,
                             left: 20,

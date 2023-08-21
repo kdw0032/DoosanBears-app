@@ -21,6 +21,12 @@ import 'package:kakao_flutter_sdk_user/src/model/user.dart' as kakao;
 import 'package:url_launcher/url_launcher.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:carousel_indicator/carousel_indicator.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:page_transition/page_transition.dart';
+import 'package:transition/transition.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/gestures.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
 class MyBearsHome extends StatelessWidget {
   const MyBearsHome({Key? key}) : super(key: key);
@@ -42,29 +48,21 @@ class BearsHome extends StatefulWidget {
 }
 
 class _BearsHomeState extends State<BearsHome> {
+  List tabUrlList = [
+    "https://m.youtube.com/@bearstv1982",
+    "https://www.instagram.com/doosanbears.1982/"
+  ];
+
   int pageIndex = 0;
+  static String youtubeId = '6tDcZNa_Q2M';
+
+  final YoutubePlayerController _con = YoutubePlayerController(
+    initialVideoId: youtubeId,
+    flags: const YoutubePlayerFlags(autoPlay: false),
+  );
 
   // ignore: prefer_final_fields
-  List<Widget> _demo = [
-    Container(
-      child: Image.asset(
-        'assets/doosanticket.png',
-        height: 200,
-      ),
-    ),
-    Container(
-      child: Image.asset(
-        'assets/doosanticket.png',
-        height: 200,
-      ),
-    ),
-    Container(
-      child: Image.asset(
-        'assets/doosanticket.png',
-        height: 200,
-      ),
-    ),
-  ];
+
   @override
   void dispose() {
     super.dispose();
@@ -98,6 +96,7 @@ class _BearsHomeState extends State<BearsHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 23, 3, 59),
       appBar: AppBar(
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -125,14 +124,21 @@ class _BearsHomeState extends State<BearsHome> {
               Positioned(
                 top: 0,
                 left: 0,
-                child: Container(
-                  width: 396,
-                  height: 200,
-                  color: const Color.fromARGB(255, 6, 3, 17),
+                child: Image.asset(
+                  'assets/flag4.jpg',
                 ),
               ),
               Positioned(
-                top: 40,
+                top: 0,
+                left: 0,
+                child: Container(
+                  width: 396,
+                  height: 280,
+                  color: const Color.fromARGB(141, 6, 3, 17),
+                ),
+              ),
+              Positioned(
+                top: 80,
                 left: 20,
                 child: Text(
                   _username,
@@ -144,7 +150,7 @@ class _BearsHomeState extends State<BearsHome> {
                 ),
               ),
               const Positioned(
-                top: 40,
+                top: 80,
                 left: 90,
                 child: Text(
                   '님',
@@ -155,107 +161,189 @@ class _BearsHomeState extends State<BearsHome> {
                 ),
               ),
               const Positioned(
-                top: 70,
+                top: 110,
                 left: 20,
                 child: Text(
-                  '다가오는 경기입니다.',
+                  '환영합니다.',
                   style: TextStyle(
-                      fontSize: 23,
+                      fontSize: 28,
                       fontWeight: FontWeight.normal,
                       color: Colors.white),
                 ),
               ),
               Positioned(
-                top: 118,
-                left: 15,
-                child: TextButton(
-                  onPressed: () {},
-                  child: const Text(
-                    '예매 가능한 경기',
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                top: 120,
-                left: 120,
-                child: IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.arrow_forward_ios,
-                    color: Colors.white,
-                    size: 15,
-                  ),
-                ),
-              ),
-              Positioned(
-                top: 150,
-                left: 0,
-                child: Container(
-                  width: 396,
-                  height: 285,
-                  color: const Color.fromARGB(255, 6, 3, 17),
-                  child: Center(
-                    child: Column(
-                      children: [
-                        SizedBox(
-                          height: 250,
-                          width: double.infinity,
-                          child: PageView(
-                            children: _demo,
-                            onPageChanged: (index) {
-                              setState(() {
-                                pageIndex = index;
-                              });
-                            },
-                          ),
-                        ),
-                        CarouselIndicator(
-                          count: _demo.length,
-                          index: pageIndex,
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              const Positioned(
-                top: 200,
-                left: 130,
-                child: Text(
-                  '03.19.일 13:00 광주',
-                  style: TextStyle(color: Colors.white, fontSize: 15),
-                ),
-              ),
-              Positioned(
-                top: 240,
-                left: 30,
+                top: 50,
+                left: 205,
                 child: Image.asset(
                   'assets/emblem.png',
-                  height: 80,
-                ),
-              ),
-              const Positioned(
-                top: 265,
-                left: 180,
-                child: Text(
-                  'VS',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20),
+                  height: 120,
                 ),
               ),
               Positioned(
-                top: 238,
-                left: 230,
-                child: Image.asset(
-                  'assets/kia.png',
-                  height: 90,
+                top: 225,
+                child: Container(
+                  padding: const EdgeInsets.all(8.0),
+                  color: Colors.white,
+                  width: 395,
+                  height: 3000,
+                  child: ContainedTabBarView(
+                    tabs: const [
+                      Text(
+                        '미디어',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        '인스타',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        '경기/중계',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        '구단',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                    views: [
+                      InAppWebView(
+                        initialUrlRequest: URLRequest(
+                          url: Uri.parse(tabUrlList[0]),
+                        ),
+                        gestureRecognizers: Set()
+                          ..add(Factory<VerticalDragGestureRecognizer>(
+                              () => VerticalDragGestureRecognizer())),
+                      ),
+                      InAppWebView(
+                        initialUrlRequest: URLRequest(
+                          url: Uri.parse(tabUrlList[1]),
+                        ),
+                        gestureRecognizers: Set()
+                          ..add(Factory<VerticalDragGestureRecognizer>(
+                              () => VerticalDragGestureRecognizer())),
+                      ),
+                      Container(
+                        color: Colors.blue,
+                      ),
+                      SingleChildScrollView(
+                        child: Stack(
+                          children: [
+                            Container(
+                              height: 5000,
+                            ),
+                            const Positioned(
+                              top: 15,
+                              left: 30,
+                              child: Text(
+                                '코칭스태프',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                            Positioned(
+                              top: 5,
+                              right: 10,
+                              child: TextButton(
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    PageTransition(
+                                      type: PageTransitionType
+                                          .leftToRightWithFade,
+                                      child: const Player(),
+                                    ),
+                                  );
+                                },
+                                child: const Text(
+                                  '선수단 전체보기 >',
+                                  style: TextStyle(
+                                      fontSize: 13, color: Colors.grey),
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              top: 40,
+                              left: 5,
+                              child: Image.asset(
+                                'assets/Doo1.png',
+                                height: 140,
+                              ),
+                            ),
+                            Positioned(
+                              top: 40,
+                              left: 205,
+                              child: Image.asset(
+                                'assets/Doo2.png',
+                                height: 140,
+                              ),
+                            ),
+                            Positioned(
+                              top: 180,
+                              left: 12,
+                              child: Image.asset(
+                                'assets/Doo3.png',
+                                height: 140,
+                              ),
+                            ),
+                            Positioned(
+                              top: 188,
+                              left: 205,
+                              child: Image.asset(
+                                'assets/Doo4.png',
+                                height: 130,
+                              ),
+                            ),
+                            const Positioned(
+                              top: 350,
+                              left: 30,
+                              child: Text(
+                                '홈구장',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                            Positioned(
+                              top: 350,
+                              right: 10,
+                              child: TextButton(
+                                child: const Text(
+                                  '홈구장 자세히 보기 >',
+                                  style: TextStyle(
+                                      color: Colors.grey, fontSize: 13),
+                                ),
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    PageTransition(
+                                      type: PageTransitionType.leftToRight,
+                                      child: const StadiumPage(),
+                                    ),
+                                  );
+                                },
+                              ),
+                            ),
+                            Positioned(
+                              top: 400,
+                              left: 10,
+                              child: Image.asset(
+                                'assets/jamsil.jpg',
+                                height: 200,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                    onChange: (index) => print(index),
+                  ),
                 ),
               ),
             ],

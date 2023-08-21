@@ -428,7 +428,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return MessageListScreen();
+                                return BottomNav();
                               }),
                             );
                           }
@@ -456,7 +456,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                             Navigator.push(
                               context,
                               Transition(
-                                  child: MessageListScreen(),
+                                  child: BottomNav(),
                                   transitionEffect: TransitionEffect.FADE),
                             );
                           }

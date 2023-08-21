@@ -8,7 +8,6 @@ import 'package:flutter_application_1/Doosan/Calender/Calender.dart';
 import 'package:flutter_application_1/Doosan/player/playerUI.dart';
 import 'package:flutter_application_1/Doosan/src/pages/Cheer/cheer.dart';
 import 'package:flutter_application_1/Doosan/src/pages/Information/info.dart';
-import 'package:new_gradient_app_bar/new_gradient_app_bar.dart';
 import 'package:transition/transition.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -18,8 +17,8 @@ class Setting extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(106, 247, 245, 245),
-      appBar: NewGradientAppBar(
+      backgroundColor: const Color.fromARGB(255, 240, 237, 237),
+      appBar: AppBar(
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -29,16 +28,7 @@ class Setting extends StatelessWidget {
             ),
           ],
         ),
-        gradient: const LinearGradient(
-          colors: [
-            Color.fromARGB(255, 41, 40, 40),
-            Color.fromARGB(255, 10, 4, 32),
-            Color.fromARGB(255, 10, 4, 32),
-            Color.fromARGB(255, 10, 4, 32),
-            Color.fromARGB(255, 10, 4, 32),
-            Color.fromARGB(255, 39, 38, 38),
-          ],
-        ),
+        backgroundColor: const Color.fromARGB(255, 7, 3, 43),
         elevation: 0,
         automaticallyImplyLeading: false,
       ),
@@ -324,7 +314,14 @@ class Setting extends StatelessWidget {
                 top: 475,
                 left: 300,
                 child: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      Transition(
+                          child: const CheerPage(),
+                          transitionEffect: TransitionEffect.LEFT_TO_RIGHT),
+                    );
+                  },
                   icon: const Icon(Icons.arrow_forward_ios),
                   iconSize: 15,
                 ),

@@ -1,4 +1,4 @@
-// ignore_for_file: sort_child_properties_last, unused_import
+// ignore_for_file: sort_child_properties_last, unused_import, file_names
 
 import 'package:flutter/material.dart';
 import 'package:contained_tab_bar_view/contained_tab_bar_view.dart';

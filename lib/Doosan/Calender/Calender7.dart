@@ -36,7 +36,7 @@ class Gameday7 extends StatelessWidget {
           ),
         ),
         title: const Text(
-          '2022년 두산베어스 경기일정',
+          '2023년 두산베어스 경기일정',
           style: TextStyle(color: Colors.white, fontSize: 17),
         ),
         centerTitle: true,
@@ -46,7 +46,7 @@ class Gameday7 extends StatelessWidget {
         child: Stack(
           children: <Widget>[
             Container(
-              height: 4000,
+              height: 1590,
             ),
             const Positioned(
               top: 20,
@@ -105,7 +105,7 @@ class Gameday7 extends StatelessWidget {
               top: 90,
               left: 30,
               child: Text(
-                '1 (목)  오후 18:30',
+                '1 (금)  오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -113,7 +113,7 @@ class Gameday7 extends StatelessWidget {
               top: 92,
               left: 280,
               child: Text(
-                '잠실',
+                '사직',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -137,13 +137,13 @@ class Gameday7 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 135,
-              left: 40,
+              top: 130,
+              left: 10,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/lotte.jpg',
-                  width: 90,
+                  'assets/emblem.png',
+                  width: 150,
                 ),
               ),
             ),
@@ -159,13 +159,13 @@ class Gameday7 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 127,
-              right: 0,
+              top: 133,
+              right: 30,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
+                  'assets/lotte.png',
+                  width: 90,
                 ),
               ),
             ),
@@ -191,23 +191,23 @@ class Gameday7 extends StatelessWidget {
               top: 260,
               left: 30,
               child: Text(
-                '2 (금)  오후 18:30',
+                '2 (토)  오후 17:00',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
             Positioned(
-              top: 305,
-              left: 40,
+              top: 295,
+              left: 10,
               child: Image.asset(
-                'assets/lotte.jpg',
-                width: 90,
+                'assets/emblem.png',
+                width: 150,
               ),
             ),
             const Positioned(
               top: 260,
               right: 85,
               child: Text(
-                '잠실',
+                '사직',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -242,11 +242,11 @@ class Gameday7 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 295,
-              right: 0,
+              top: 300,
+              right: 30,
               child: Image.asset(
-                'assets/emblem.png',
-                width: 150,
+                'assets/lotte.png',
+                width: 90,
               ),
             ),
             Positioned(
@@ -271,7 +271,7 @@ class Gameday7 extends StatelessWidget {
               top: 430,
               left: 30,
               child: Text(
-                '3 (토)  오후 17:00',
+                '3 (일)  오후 14:00',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -279,7 +279,7 @@ class Gameday7 extends StatelessWidget {
               top: 430,
               left: 280,
               child: Text(
-                '잠실',
+                '사직',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -303,13 +303,13 @@ class Gameday7 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 470,
-              left: 30,
+              top: 460,
+              left: 10,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/samsung.png',
-                  width: 100,
+                  'assets/emblem.png',
+                  width: 150,
                 ),
               ),
             ),
@@ -325,13 +325,13 @@ class Gameday7 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 460,
-              right: 0,
+              top: 465,
+              right: 30,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
+                  'assets/lotte.png',
+                  width: 90,
                 ),
               ),
             ),
@@ -357,7 +357,7 @@ class Gameday7 extends StatelessWidget {
               top: 620,
               left: 35,
               child: Text(
-                '4 (일) 오후 14:00',
+                '5 (화) 오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -389,12 +389,12 @@ class Gameday7 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 665,
+              top: 655,
               left: 30,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/samsung.png',
+                  'assets/kia.png',
                   width: 100,
                 ),
               ),
@@ -440,7 +440,7 @@ class Gameday7 extends StatelessWidget {
               top: 805,
               left: 35,
               child: Text(
-                '6 (화) 오후 18:30',
+                '6 (수) 오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -448,7 +448,7 @@ class Gameday7 extends StatelessWidget {
               top: 805,
               right: 85,
               child: Text(
-                '창원',
+                '잠실',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -472,13 +472,13 @@ class Gameday7 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 845,
-              left: 10,
+              top: 840,
+              left: 30,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
+                  'assets/kia.png',
+                  width: 100,
                 ),
               ),
             ),
@@ -494,13 +494,13 @@ class Gameday7 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 840,
+              top: 845,
               right: 0,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/NC.png',
-                  width: 160,
+                  'assets/emblem.png',
+                  width: 150,
                 ),
               ),
             ),
@@ -526,7 +526,7 @@ class Gameday7 extends StatelessWidget {
               top: 1000,
               left: 35,
               child: Text(
-                '7 (수) 오후 18:30',
+                '7 (목) 오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -534,7 +534,7 @@ class Gameday7 extends StatelessWidget {
               top: 1000,
               right: 85,
               child: Text(
-                '창원',
+                '잠실',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
@@ -561,13 +561,13 @@ class Gameday7 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 1035,
-              left: 10,
+              top: 1030,
+              left: 30,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
+                  'assets/kia.png',
+                  width: 100,
                 ),
               ),
             ),
@@ -588,8 +588,8 @@ class Gameday7 extends StatelessWidget {
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/NC.png',
-                  width: 160,
+                  'assets/emblem.png',
+                  width: 150,
                 ),
               ),
             ),
@@ -615,7 +615,7 @@ class Gameday7 extends StatelessWidget {
               top: 1200,
               left: 35,
               child: Text(
-                '9 (목) 오후 18:30',
+                '8 (금) 오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -647,13 +647,13 @@ class Gameday7 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 1217,
-              left: 10,
+              top: 1245,
+              left: 40,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/hanwha.png',
-                  width: 150,
+                  'assets/samsung.png',
+                  width: 90,
                 ),
               ),
             ),
@@ -701,7 +701,7 @@ class Gameday7 extends StatelessWidget {
               top: 1400,
               left: 35,
               child: Text(
-                '10 (금) 오후 18:30',
+                '9 (토) 오후 17:00',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -733,13 +733,13 @@ class Gameday7 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 1417,
-              left: 10,
+              top: 1447,
+              left: 40,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/hanwha.png',
-                  width: 150,
+                  'assets/samsung.png',
+                  width: 90,
                 ),
               ),
             ),
@@ -787,7 +787,7 @@ class Gameday7 extends StatelessWidget {
               top: 1600,
               left: 35,
               child: Text(
-                '11 (토) 오후 17:00',
+                '10 (일) 오후 14:00',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -819,13 +819,13 @@ class Gameday7 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 1635,
+              top: 1645,
               left: 40,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/kia.png',
-                  width: 100,
+                  'assets/samsung.png',
+                  width: 90,
                 ),
               ),
             ),
@@ -851,952 +851,952 @@ class Gameday7 extends StatelessWidget {
                 ),
               ),
             ),
-            Positioned(
-              top: 1790,
-              left: 15,
-              width: 360,
-              height: 150,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.black.withOpacity(0.3),
-                        blurRadius: 15,
-                        spreadRadius: 5),
-                  ],
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 1800,
-              left: 35,
-              child: Text(
-                '12 (일) 오후 14:00',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            const Positioned(
-              top: 1800,
-              right: 85,
-              child: Text(
-                '잠실',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            Positioned(
-              top: 1800,
-              right: 25,
-              width: 55,
-              height: 20,
-              child: Container(
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 10, 10, 10),
-                    borderRadius: BorderRadius.circular(15)),
-                child: const Text(
-                  '경기예정',
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 247, 244, 244),
-                      fontSize: 11.8,
-                      fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 1835,
-              left: 40,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/kia.png',
-                  width: 100,
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 1855,
-              left: 187,
-              child: Text(
-                'VS',
-                style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 194, 6, 6)),
-              ),
-            ),
-            Positioned(
-              top: 1835,
-              right: 0,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 1990,
-              left: 15,
-              width: 360,
-              height: 150,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.black.withOpacity(0.3),
-                        blurRadius: 15,
-                        spreadRadius: 5),
-                  ],
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 2000,
-              left: 35,
-              child: Text(
-                '13 (화) 오후 18:30',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            const Positioned(
-              top: 2000,
-              right: 85,
-              child: Text(
-                '잠실',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            Positioned(
-              top: 2000,
-              right: 25,
-              width: 55,
-              height: 20,
-              child: Container(
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 4, 8, 196),
-                    borderRadius: BorderRadius.circular(15)),
-                child: const Text(
-                  '경기예정',
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 248, 248, 248),
-                      fontSize: 11.8,
-                      fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 2027,
-              left: 40,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/lgemblem.png',
-                  width: 100,
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 2055,
-              left: 179,
-              child: Text(
-                'VS',
-                style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 190, 8, 8)),
-              ),
-            ),
-            Positioned(
-              top: 2035,
-              right: 0,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 2190,
-              left: 15,
-              width: 360,
-              height: 150,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.black.withOpacity(0.3),
-                        blurRadius: 15,
-                        spreadRadius: 5),
-                  ],
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 2200,
-              left: 35,
-              child: Text(
-                '14 (수) 오후 18:30',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            const Positioned(
-              top: 2200,
-              right: 85,
-              child: Text(
-                '잠실',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            Positioned(
-              top: 2200,
-              right: 25,
-              width: 55,
-              height: 20,
-              child: Container(
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 6, 18, 190),
-                    borderRadius: BorderRadius.circular(15)),
-                child: const Text(
-                  '경기예정',
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 248, 248, 248),
-                      fontSize: 11.8,
-                      fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 2225,
-              left: 40,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/lgemblem.png',
-                  width: 100,
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 2250,
-              left: 187,
-              child: Text(
-                'VS',
-                style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 196, 7, 7)),
-              ),
-            ),
-            Positioned(
-              top: 2233,
-              right: 0,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 2390,
-              left: 15,
-              width: 360,
-              height: 150,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.black.withOpacity(0.3),
-                        blurRadius: 15,
-                        spreadRadius: 5),
-                  ],
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 2400,
-              left: 35,
-              child: Text(
-                '15 (목) 오후 18:30',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            const Positioned(
-              top: 2400,
-              right: 85,
-              child: Text(
-                '대구',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            Positioned(
-              top: 2400,
-              right: 25,
-              width: 55,
-              height: 20,
-              child: Container(
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 6, 25, 201),
-                    borderRadius: BorderRadius.circular(15)),
-                child: const Text(
-                  '경기예정',
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 248, 248, 248),
-                      fontSize: 11.8,
-                      fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 2435,
-              left: 15,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 2455,
-              left: 180,
-              child: Text(
-                'VS',
-                style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 185, 8, 8)),
-              ),
-            ),
-            Positioned(
-              top: 2435,
-              right: 30,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/samsung.png',
-                  width: 100,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 2590,
-              left: 15,
-              width: 360,
-              height: 150,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.black.withOpacity(0.3),
-                        blurRadius: 15,
-                        spreadRadius: 5),
-                  ],
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 2600,
-              left: 35,
-              child: Text(
-                '16 (금) 오후 18:30',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            const Positioned(
-              top: 2600,
-              right: 85,
-              child: Text(
-                '대구',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            Positioned(
-              top: 2600,
-              right: 25,
-              width: 55,
-              height: 20,
-              child: Container(
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 4, 42, 211),
-                    borderRadius: BorderRadius.circular(15)),
-                child: const Text(
-                  '경기예정',
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 248, 248, 248),
-                      fontSize: 11.8,
-                      fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 2635,
-              left: 15,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 2660,
-              left: 180,
-              child: Text(
-                'VS',
-                style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 196, 6, 6)),
-              ),
-            ),
-            Positioned(
-              top: 2635,
-              right: 30,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/samsung.png',
-                  width: 100,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 2790,
-              left: 15,
-              width: 360,
-              height: 150,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.black.withOpacity(0.3),
-                        blurRadius: 15,
-                        spreadRadius: 5),
-                  ],
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 2800,
-              left: 35,
-              child: Text(
-                '17 (토) 오후 17:00',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            const Positioned(
-              top: 2800,
-              right: 85,
-              child: Text(
-                '문학',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            Positioned(
-              top: 2800,
-              right: 25,
-              width: 55,
-              height: 20,
-              child: Container(
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 5, 30, 177),
-                    borderRadius: BorderRadius.circular(15)),
-                child: const Text(
-                  '경기예정',
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 248, 248, 248),
-                      fontSize: 11.8,
-                      fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 2835,
-              left: 15,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 2860,
-              left: 179,
-              child: Text(
-                'VS',
-                style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 185, 6, 6)),
-              ),
-            ),
-            Positioned(
-              top: 2815,
-              right: 0,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/ssg.png',
-                  width: 160,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 2990,
-              left: 15,
-              width: 360,
-              height: 150,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.black.withOpacity(0.3),
-                        blurRadius: 15,
-                        spreadRadius: 5),
-                  ],
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 3000,
-              left: 35,
-              child: Text(
-                '18 (일) 오후 14:00',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            const Positioned(
-              top: 3000,
-              right: 85,
-              child: Text(
-                '문학',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            Positioned(
-              top: 3000,
-              right: 25,
-              width: 55,
-              height: 20,
-              child: Container(
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 7, 10, 184),
-                    borderRadius: BorderRadius.circular(15)),
-                child: const Text(
-                  '경기예정',
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 248, 248, 248),
-                      fontSize: 11.8,
-                      fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 3035,
-              left: 15,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 3055,
-              left: 183,
-              child: Text(
-                'VS',
-                style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 197, 6, 6)),
-              ),
-            ),
-            Positioned(
-              top: 3010,
-              right: 0,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/ssg.png',
-                  width: 160,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 3190,
-              left: 15,
-              width: 360,
-              height: 150,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.black.withOpacity(0.3),
-                        blurRadius: 15,
-                        spreadRadius: 5),
-                  ],
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 3200,
-              left: 35,
-              child: Text(
-                '20 (화) 오후 18:30',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            const Positioned(
-              top: 3200,
-              right: 85,
-              child: Text(
-                '잠실',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            Positioned(
-              top: 3200,
-              right: 25,
-              width: 55,
-              height: 20,
-              child: Container(
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 6, 34, 196),
-                    borderRadius: BorderRadius.circular(15)),
-                child: const Text(
-                  '경기예정',
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 248, 248, 248),
-                      fontSize: 11.8,
-                      fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 3235,
-              left: 15,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/NC.png',
-                  width: 160,
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 3255,
-              left: 185,
-              child: Text(
-                'VS',
-                style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 194, 5, 5)),
-              ),
-            ),
-            Positioned(
-              top: 3232,
-              right: 0,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 3390,
-              left: 15,
-              width: 360,
-              height: 150,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.black.withOpacity(0.3),
-                        blurRadius: 15,
-                        spreadRadius: 5),
-                  ],
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 3400,
-              left: 35,
-              child: Text(
-                '21 (수) 오후 18:30',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            const Positioned(
-              top: 3400,
-              right: 85,
-              child: Text(
-                '잠실',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            Positioned(
-              top: 3400,
-              right: 25,
-              width: 55,
-              height: 20,
-              child: Container(
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 4, 32, 187),
-                    borderRadius: BorderRadius.circular(15)),
-                child: const Text(
-                  '경기예정',
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 248, 248, 248),
-                      fontSize: 11.8,
-                      fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 3435,
-              left: 15,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/NC.png',
-                  width: 160,
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 3455,
-              left: 185,
-              child: Text(
-                'VS',
-                style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 197, 6, 6)),
-              ),
-            ),
-            Positioned(
-              top: 3432,
-              right: 0,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 3590,
-              left: 15,
-              width: 360,
-              height: 150,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.black.withOpacity(0.3),
-                        blurRadius: 15,
-                        spreadRadius: 5),
-                  ],
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 3600,
-              left: 35,
-              child: Text(
-                '22 (목) 오후 18:30',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            const Positioned(
-              top: 3600,
-              right: 85,
-              child: Text(
-                '고척',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            Positioned(
-              top: 3600,
-              right: 25,
-              width: 55,
-              height: 20,
-              child: Container(
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 6, 34, 189),
-                    borderRadius: BorderRadius.circular(15)),
-                child: const Text(
-                  '경기예정',
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 248, 248, 248),
-                      fontSize: 11.8,
-                      fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 3635,
-              left: 15,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 3655,
-              left: 185,
-              child: Text(
-                'VS',
-                style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 201, 6, 6)),
-              ),
-            ),
-            Positioned(
-              top: 3630,
-              right: 30,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/kiwoom.png',
-                  width: 100,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 3790,
-              left: 15,
-              width: 360,
-              height: 150,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.black.withOpacity(0.3),
-                        blurRadius: 15,
-                        spreadRadius: 5),
-                  ],
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 3800,
-              left: 35,
-              child: Text(
-                '23 (금) 오후 18:30',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            const Positioned(
-              top: 3800,
-              right: 85,
-              child: Text(
-                '고척',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ),
-            Positioned(
-              top: 3800,
-              right: 25,
-              width: 55,
-              height: 20,
-              child: Container(
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 5, 23, 185),
-                    borderRadius: BorderRadius.circular(15)),
-                child: const Text(
-                  '경기예정',
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 248, 248, 248),
-                      fontSize: 11.8,
-                      fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 3840,
-              left: 10,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
-                ),
-              ),
-            ),
-            const Positioned(
-              top: 3860,
-              left: 185,
-              child: Text(
-                'VS',
-                style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 175, 5, 5)),
-              ),
-            ),
-            Positioned(
-              top: 3835,
-              right: 30,
-              child: Opacity(
-                opacity: 1,
-                child: Image.asset(
-                  'assets/kiwoom.png',
-                  width: 100,
-                ),
-              ),
-            ),
+            // Positioned(
+            //   top: 1790,
+            //   left: 15,
+            //   width: 360,
+            //   height: 150,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //       color: Colors.white,
+            //       borderRadius: BorderRadius.circular(15),
+            //       boxShadow: [
+            //         BoxShadow(
+            //             color: Colors.black.withOpacity(0.3),
+            //             blurRadius: 15,
+            //             spreadRadius: 5),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 1800,
+            //   left: 35,
+            //   child: Text(
+            //     '12 (일) 오후 14:00',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 1800,
+            //   right: 85,
+            //   child: Text(
+            //     '잠실',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 1800,
+            //   right: 25,
+            //   width: 55,
+            //   height: 20,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //         color: const Color.fromARGB(255, 10, 10, 10),
+            //         borderRadius: BorderRadius.circular(15)),
+            //     child: const Text(
+            //       '경기예정',
+            //       style: TextStyle(
+            //           color: Color.fromARGB(255, 247, 244, 244),
+            //           fontSize: 11.8,
+            //           fontWeight: FontWeight.bold),
+            //       textAlign: TextAlign.center,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 1835,
+            //   left: 40,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/kia.png',
+            //       width: 100,
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 1855,
+            //   left: 187,
+            //   child: Text(
+            //     'VS',
+            //     style: TextStyle(
+            //         fontSize: 35,
+            //         fontWeight: FontWeight.bold,
+            //         color: Color.fromARGB(255, 194, 6, 6)),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 1835,
+            //   right: 0,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/emblem.png',
+            //       width: 150,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 1990,
+            //   left: 15,
+            //   width: 360,
+            //   height: 150,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //       color: Colors.white,
+            //       borderRadius: BorderRadius.circular(15),
+            //       boxShadow: [
+            //         BoxShadow(
+            //             color: Colors.black.withOpacity(0.3),
+            //             blurRadius: 15,
+            //             spreadRadius: 5),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 2000,
+            //   left: 35,
+            //   child: Text(
+            //     '13 (화) 오후 18:30',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 2000,
+            //   right: 85,
+            //   child: Text(
+            //     '잠실',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2000,
+            //   right: 25,
+            //   width: 55,
+            //   height: 20,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //         color: const Color.fromARGB(255, 4, 8, 196),
+            //         borderRadius: BorderRadius.circular(15)),
+            //     child: const Text(
+            //       '경기예정',
+            //       style: TextStyle(
+            //           color: Color.fromARGB(255, 248, 248, 248),
+            //           fontSize: 11.8,
+            //           fontWeight: FontWeight.bold),
+            //       textAlign: TextAlign.center,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2027,
+            //   left: 40,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/lgemblem.png',
+            //       width: 100,
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 2055,
+            //   left: 179,
+            //   child: Text(
+            //     'VS',
+            //     style: TextStyle(
+            //         fontSize: 35,
+            //         fontWeight: FontWeight.bold,
+            //         color: Color.fromARGB(255, 190, 8, 8)),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2035,
+            //   right: 0,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/emblem.png',
+            //       width: 150,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2190,
+            //   left: 15,
+            //   width: 360,
+            //   height: 150,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //       color: Colors.white,
+            //       borderRadius: BorderRadius.circular(15),
+            //       boxShadow: [
+            //         BoxShadow(
+            //             color: Colors.black.withOpacity(0.3),
+            //             blurRadius: 15,
+            //             spreadRadius: 5),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 2200,
+            //   left: 35,
+            //   child: Text(
+            //     '14 (수) 오후 18:30',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 2200,
+            //   right: 85,
+            //   child: Text(
+            //     '잠실',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2200,
+            //   right: 25,
+            //   width: 55,
+            //   height: 20,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //         color: const Color.fromARGB(255, 6, 18, 190),
+            //         borderRadius: BorderRadius.circular(15)),
+            //     child: const Text(
+            //       '경기예정',
+            //       style: TextStyle(
+            //           color: Color.fromARGB(255, 248, 248, 248),
+            //           fontSize: 11.8,
+            //           fontWeight: FontWeight.bold),
+            //       textAlign: TextAlign.center,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2225,
+            //   left: 40,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/lgemblem.png',
+            //       width: 100,
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 2250,
+            //   left: 187,
+            //   child: Text(
+            //     'VS',
+            //     style: TextStyle(
+            //         fontSize: 35,
+            //         fontWeight: FontWeight.bold,
+            //         color: Color.fromARGB(255, 196, 7, 7)),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2233,
+            //   right: 0,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/emblem.png',
+            //       width: 150,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2390,
+            //   left: 15,
+            //   width: 360,
+            //   height: 150,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //       color: Colors.white,
+            //       borderRadius: BorderRadius.circular(15),
+            //       boxShadow: [
+            //         BoxShadow(
+            //             color: Colors.black.withOpacity(0.3),
+            //             blurRadius: 15,
+            //             spreadRadius: 5),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 2400,
+            //   left: 35,
+            //   child: Text(
+            //     '15 (목) 오후 18:30',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 2400,
+            //   right: 85,
+            //   child: Text(
+            //     '대구',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2400,
+            //   right: 25,
+            //   width: 55,
+            //   height: 20,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //         color: const Color.fromARGB(255, 6, 25, 201),
+            //         borderRadius: BorderRadius.circular(15)),
+            //     child: const Text(
+            //       '경기예정',
+            //       style: TextStyle(
+            //           color: Color.fromARGB(255, 248, 248, 248),
+            //           fontSize: 11.8,
+            //           fontWeight: FontWeight.bold),
+            //       textAlign: TextAlign.center,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2435,
+            //   left: 15,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/emblem.png',
+            //       width: 150,
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 2455,
+            //   left: 180,
+            //   child: Text(
+            //     'VS',
+            //     style: TextStyle(
+            //         fontSize: 35,
+            //         fontWeight: FontWeight.bold,
+            //         color: Color.fromARGB(255, 185, 8, 8)),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2435,
+            //   right: 30,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/samsung.png',
+            //       width: 100,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2590,
+            //   left: 15,
+            //   width: 360,
+            //   height: 150,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //       color: Colors.white,
+            //       borderRadius: BorderRadius.circular(15),
+            //       boxShadow: [
+            //         BoxShadow(
+            //             color: Colors.black.withOpacity(0.3),
+            //             blurRadius: 15,
+            //             spreadRadius: 5),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 2600,
+            //   left: 35,
+            //   child: Text(
+            //     '16 (금) 오후 18:30',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 2600,
+            //   right: 85,
+            //   child: Text(
+            //     '대구',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2600,
+            //   right: 25,
+            //   width: 55,
+            //   height: 20,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //         color: const Color.fromARGB(255, 4, 42, 211),
+            //         borderRadius: BorderRadius.circular(15)),
+            //     child: const Text(
+            //       '경기예정',
+            //       style: TextStyle(
+            //           color: Color.fromARGB(255, 248, 248, 248),
+            //           fontSize: 11.8,
+            //           fontWeight: FontWeight.bold),
+            //       textAlign: TextAlign.center,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2635,
+            //   left: 15,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/emblem.png',
+            //       width: 150,
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 2660,
+            //   left: 180,
+            //   child: Text(
+            //     'VS',
+            //     style: TextStyle(
+            //         fontSize: 35,
+            //         fontWeight: FontWeight.bold,
+            //         color: Color.fromARGB(255, 196, 6, 6)),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2635,
+            //   right: 30,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/samsung.png',
+            //       width: 100,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2790,
+            //   left: 15,
+            //   width: 360,
+            //   height: 150,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //       color: Colors.white,
+            //       borderRadius: BorderRadius.circular(15),
+            //       boxShadow: [
+            //         BoxShadow(
+            //             color: Colors.black.withOpacity(0.3),
+            //             blurRadius: 15,
+            //             spreadRadius: 5),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 2800,
+            //   left: 35,
+            //   child: Text(
+            //     '17 (토) 오후 17:00',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 2800,
+            //   right: 85,
+            //   child: Text(
+            //     '문학',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2800,
+            //   right: 25,
+            //   width: 55,
+            //   height: 20,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //         color: const Color.fromARGB(255, 5, 30, 177),
+            //         borderRadius: BorderRadius.circular(15)),
+            //     child: const Text(
+            //       '경기예정',
+            //       style: TextStyle(
+            //           color: Color.fromARGB(255, 248, 248, 248),
+            //           fontSize: 11.8,
+            //           fontWeight: FontWeight.bold),
+            //       textAlign: TextAlign.center,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2835,
+            //   left: 15,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/emblem.png',
+            //       width: 150,
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 2860,
+            //   left: 179,
+            //   child: Text(
+            //     'VS',
+            //     style: TextStyle(
+            //         fontSize: 35,
+            //         fontWeight: FontWeight.bold,
+            //         color: Color.fromARGB(255, 185, 6, 6)),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2815,
+            //   right: 0,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/ssg.png',
+            //       width: 160,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 2990,
+            //   left: 15,
+            //   width: 360,
+            //   height: 150,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //       color: Colors.white,
+            //       borderRadius: BorderRadius.circular(15),
+            //       boxShadow: [
+            //         BoxShadow(
+            //             color: Colors.black.withOpacity(0.3),
+            //             blurRadius: 15,
+            //             spreadRadius: 5),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 3000,
+            //   left: 35,
+            //   child: Text(
+            //     '18 (일) 오후 14:00',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 3000,
+            //   right: 85,
+            //   child: Text(
+            //     '문학',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 3000,
+            //   right: 25,
+            //   width: 55,
+            //   height: 20,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //         color: const Color.fromARGB(255, 7, 10, 184),
+            //         borderRadius: BorderRadius.circular(15)),
+            //     child: const Text(
+            //       '경기예정',
+            //       style: TextStyle(
+            //           color: Color.fromARGB(255, 248, 248, 248),
+            //           fontSize: 11.8,
+            //           fontWeight: FontWeight.bold),
+            //       textAlign: TextAlign.center,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 3035,
+            //   left: 15,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/emblem.png',
+            //       width: 150,
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 3055,
+            //   left: 183,
+            //   child: Text(
+            //     'VS',
+            //     style: TextStyle(
+            //         fontSize: 35,
+            //         fontWeight: FontWeight.bold,
+            //         color: Color.fromARGB(255, 197, 6, 6)),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 3010,
+            //   right: 0,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/ssg.png',
+            //       width: 160,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 3190,
+            //   left: 15,
+            //   width: 360,
+            //   height: 150,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //       color: Colors.white,
+            //       borderRadius: BorderRadius.circular(15),
+            //       boxShadow: [
+            //         BoxShadow(
+            //             color: Colors.black.withOpacity(0.3),
+            //             blurRadius: 15,
+            //             spreadRadius: 5),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 3200,
+            //   left: 35,
+            //   child: Text(
+            //     '20 (화) 오후 18:30',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 3200,
+            //   right: 85,
+            //   child: Text(
+            //     '잠실',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 3200,
+            //   right: 25,
+            //   width: 55,
+            //   height: 20,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //         color: const Color.fromARGB(255, 6, 34, 196),
+            //         borderRadius: BorderRadius.circular(15)),
+            //     child: const Text(
+            //       '경기예정',
+            //       style: TextStyle(
+            //           color: Color.fromARGB(255, 248, 248, 248),
+            //           fontSize: 11.8,
+            //           fontWeight: FontWeight.bold),
+            //       textAlign: TextAlign.center,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 3235,
+            //   left: 15,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/NC.png',
+            //       width: 160,
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 3255,
+            //   left: 185,
+            //   child: Text(
+            //     'VS',
+            //     style: TextStyle(
+            //         fontSize: 35,
+            //         fontWeight: FontWeight.bold,
+            //         color: Color.fromARGB(255, 194, 5, 5)),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 3232,
+            //   right: 0,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/emblem.png',
+            //       width: 150,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 3390,
+            //   left: 15,
+            //   width: 360,
+            //   height: 150,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //       color: Colors.white,
+            //       borderRadius: BorderRadius.circular(15),
+            //       boxShadow: [
+            //         BoxShadow(
+            //             color: Colors.black.withOpacity(0.3),
+            //             blurRadius: 15,
+            //             spreadRadius: 5),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 3400,
+            //   left: 35,
+            //   child: Text(
+            //     '21 (수) 오후 18:30',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 3400,
+            //   right: 85,
+            //   child: Text(
+            //     '잠실',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 3400,
+            //   right: 25,
+            //   width: 55,
+            //   height: 20,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //         color: const Color.fromARGB(255, 4, 32, 187),
+            //         borderRadius: BorderRadius.circular(15)),
+            //     child: const Text(
+            //       '경기예정',
+            //       style: TextStyle(
+            //           color: Color.fromARGB(255, 248, 248, 248),
+            //           fontSize: 11.8,
+            //           fontWeight: FontWeight.bold),
+            //       textAlign: TextAlign.center,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 3435,
+            //   left: 15,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/NC.png',
+            //       width: 160,
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 3455,
+            //   left: 185,
+            //   child: Text(
+            //     'VS',
+            //     style: TextStyle(
+            //         fontSize: 35,
+            //         fontWeight: FontWeight.bold,
+            //         color: Color.fromARGB(255, 197, 6, 6)),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 3432,
+            //   right: 0,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/emblem.png',
+            //       width: 150,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 3590,
+            //   left: 15,
+            //   width: 360,
+            //   height: 150,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //       color: Colors.white,
+            //       borderRadius: BorderRadius.circular(15),
+            //       boxShadow: [
+            //         BoxShadow(
+            //             color: Colors.black.withOpacity(0.3),
+            //             blurRadius: 15,
+            //             spreadRadius: 5),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 3600,
+            //   left: 35,
+            //   child: Text(
+            //     '22 (목) 오후 18:30',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 3600,
+            //   right: 85,
+            //   child: Text(
+            //     '고척',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 3600,
+            //   right: 25,
+            //   width: 55,
+            //   height: 20,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //         color: const Color.fromARGB(255, 6, 34, 189),
+            //         borderRadius: BorderRadius.circular(15)),
+            //     child: const Text(
+            //       '경기예정',
+            //       style: TextStyle(
+            //           color: Color.fromARGB(255, 248, 248, 248),
+            //           fontSize: 11.8,
+            //           fontWeight: FontWeight.bold),
+            //       textAlign: TextAlign.center,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 3635,
+            //   left: 15,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/emblem.png',
+            //       width: 150,
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 3655,
+            //   left: 185,
+            //   child: Text(
+            //     'VS',
+            //     style: TextStyle(
+            //         fontSize: 35,
+            //         fontWeight: FontWeight.bold,
+            //         color: Color.fromARGB(255, 201, 6, 6)),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 3630,
+            //   right: 30,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/kiwoom.png',
+            //       width: 100,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 3790,
+            //   left: 15,
+            //   width: 360,
+            //   height: 150,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //       color: Colors.white,
+            //       borderRadius: BorderRadius.circular(15),
+            //       boxShadow: [
+            //         BoxShadow(
+            //             color: Colors.black.withOpacity(0.3),
+            //             blurRadius: 15,
+            //             spreadRadius: 5),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 3800,
+            //   left: 35,
+            //   child: Text(
+            //     '23 (금) 오후 18:30',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 3800,
+            //   right: 85,
+            //   child: Text(
+            //     '고척',
+            //     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 3800,
+            //   right: 25,
+            //   width: 55,
+            //   height: 20,
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //         color: const Color.fromARGB(255, 5, 23, 185),
+            //         borderRadius: BorderRadius.circular(15)),
+            //     child: const Text(
+            //       '경기예정',
+            //       style: TextStyle(
+            //           color: Color.fromARGB(255, 248, 248, 248),
+            //           fontSize: 11.8,
+            //           fontWeight: FontWeight.bold),
+            //       textAlign: TextAlign.center,
+            //     ),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 3840,
+            //   left: 10,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/emblem.png',
+            //       width: 150,
+            //     ),
+            //   ),
+            // ),
+            // const Positioned(
+            //   top: 3860,
+            //   left: 185,
+            //   child: Text(
+            //     'VS',
+            //     style: TextStyle(
+            //         fontSize: 35,
+            //         fontWeight: FontWeight.bold,
+            //         color: Color.fromARGB(255, 175, 5, 5)),
+            //   ),
+            // ),
+            // Positioned(
+            //   top: 3835,
+            //   right: 30,
+            //   child: Opacity(
+            //     opacity: 1,
+            //     child: Image.asset(
+            //       'assets/kiwoom.png',
+            //       width: 100,
+            //     ),
+            //   ),
+            // ),
           ],
         ),
       ),

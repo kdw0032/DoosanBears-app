@@ -38,7 +38,7 @@ class Gameday3 extends StatelessWidget {
           ),
         ),
         title: const Text(
-          '2022년 두산베어스 경기일정',
+          '2023년 두산베어스 경기일정',
           style: TextStyle(color: Colors.white, fontSize: 17),
         ),
         centerTitle: true,
@@ -114,7 +114,7 @@ class Gameday3 extends StatelessWidget {
               top: 90,
               left: 30,
               child: Text(
-                '1 (일)  오후 14:00',
+                '2 (화)  오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -122,7 +122,7 @@ class Gameday3 extends StatelessWidget {
               top: 92,
               left: 280,
               child: Text(
-                '문학',
+                '잠실',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -149,7 +149,7 @@ class Gameday3 extends StatelessWidget {
               top: 150,
               left: 145,
               child: Text(
-                '9',
+                '0',
                 style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
               ),
             ),
@@ -157,15 +157,15 @@ class Gameday3 extends StatelessWidget {
               top: 150,
               left: 240,
               child: Text(
-                '0',
+                '3',
                 style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
               ),
             ),
             Positioned(
-              top: 130,
+              top: 110,
               left: 10,
               child: Image.asset(
-                'assets/emblem.png',
+                'assets/hanwha.png',
                 width: 150,
               ),
             ),
@@ -181,10 +181,10 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 115,
+              top: 125,
               right: 0,
               child: Image.asset(
-                'assets/ssg.png',
+                'assets/emblem.png',
                 width: 150,
               ),
             ),
@@ -210,15 +210,15 @@ class Gameday3 extends StatelessWidget {
               top: 260,
               left: 30,
               child: Text(
-                '3 (화)  오후 18:30',
+                '3 (수)  오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
             Positioned(
-              top: 295,
+              top: 275,
               left: 10,
               child: Image.asset(
-                'assets/emblem.png',
+                'assets/hanwha.png',
                 width: 150,
               ),
             ),
@@ -253,7 +253,7 @@ class Gameday3 extends StatelessWidget {
               top: 315,
               left: 145,
               child: Text(
-                '3',
+                '8',
                 style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
               ),
             ),
@@ -272,16 +272,16 @@ class Gameday3 extends StatelessWidget {
               top: 315,
               left: 240,
               child: Text(
-                '4',
+                '3',
                 style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
               ),
             ),
             Positioned(
-              top: 280,
-              right: 25,
+              top: 290,
+              right: 0,
               child: Image.asset(
-                'assets/lgemblem.png',
-                width: 100,
+                'assets/emblem.png',
+                width: 150,
               ),
             ),
             Positioned(
@@ -306,7 +306,7 @@ class Gameday3 extends StatelessWidget {
               top: 430,
               left: 30,
               child: Text(
-                '4 (수)  오후 18:30',
+                '4 (목)  오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -338,21 +338,21 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 460,
+              top: 440,
               left: 10,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/emblem.png',
+                  'assets/hanwha.png',
                   width: 150,
                 ),
               ),
             ),
             Positioned(
               top: 480,
-              left: 145,
+              left: 135,
               child: Text(
-                '5',
+                '10',
                 style: TextStyle(
                     fontSize: 35,
                     fontWeight: FontWeight.bold,
@@ -363,18 +363,18 @@ class Gameday3 extends StatelessWidget {
               top: 480,
               left: 180,
               child: Text(
-                '승리',
+                '패배',
                 style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 247, 1, 1)),
+                    color: Color.fromARGB(255, 19, 19, 19)),
               ),
             ),
             Positioned(
               top: 480,
               right: 132,
               child: Text(
-                '2',
+                '3',
                 style: TextStyle(
                     fontSize: 35,
                     fontWeight: FontWeight.bold,
@@ -382,13 +382,13 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 445,
-              right: 25,
+              top: 455,
+              right: 0,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/lgemblem.png',
-                  width: 100,
+                  'assets/emblem.png',
+                  width: 150,
                 ),
               ),
             ),
@@ -414,7 +414,7 @@ class Gameday3 extends StatelessWidget {
               top: 620,
               left: 35,
               child: Text(
-                '5 (목) 오후 14:00',
+                '5 (금) 오후 14:00',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -433,10 +433,10 @@ class Gameday3 extends StatelessWidget {
               height: 18,
               child: Container(
                 decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 5, 5, 5),
+                    color: Color.fromARGB(255, 243, 5, 5),
                     borderRadius: BorderRadius.circular(15)),
                 child: Text(
-                  '경기종료',
+                  '경기취소',
                   style: TextStyle(
                       color: Color.fromARGB(255, 252, 252, 252),
                       fontSize: 11.8,
@@ -446,46 +446,60 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 660,
-              left: 10,
-              child: Image.asset(
-                'assets/emblem.png',
-                width: 150,
+              top: 650,
+              left: 30,
+              child: Opacity(
+                opacity: 0.5,
+                child: Image.asset(
+                  'assets/lgemblem.png',
+                  width: 100,
+                ),
               ),
             ),
             Positioned(
               top: 680,
               left: 145,
               child: Text(
-                '9',
-                style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+                '0',
+                style: TextStyle(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(64, 0, 0, 0),
+                ),
               ),
             ),
             Positioned(
-              top: 680,
-              left: 180,
+              top: 685,
+              left: 185,
               child: Text(
-                '승리',
+                'VS',
                 style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 236, 19, 4)),
+                    color: Color.fromARGB(255, 10, 10, 10)),
               ),
             ),
             Positioned(
               top: 680,
-              right: 130,
+              right: 135,
               child: Text(
-                '4',
-                style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+                '0',
+                style: TextStyle(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(75, 0, 0, 0),
+                ),
               ),
             ),
             Positioned(
-              top: 645,
-              right: 25,
-              child: Image.asset(
-                'assets/lgemblem.png',
-                width: 100,
+              top: 655,
+              right: 0,
+              child: Opacity(
+                opacity: 0.5,
+                child: Image.asset(
+                  'assets/emblem.png',
+                  width: 150,
+                ),
               ),
             ),
             Positioned(
@@ -510,7 +524,7 @@ class Gameday3 extends StatelessWidget {
               top: 805,
               left: 35,
               child: Text(
-                '6 (금) 오후 18:30',
+                '6 (토) 오후 14:00',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -529,10 +543,10 @@ class Gameday3 extends StatelessWidget {
               height: 18,
               child: Container(
                 decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 0, 0, 0),
+                    color: Color.fromARGB(255, 248, 2, 2),
                     borderRadius: BorderRadius.circular(15)),
                 child: Text(
-                  '경기종료',
+                  '경기취소',
                   style: TextStyle(
                       color: Color.fromARGB(255, 250, 250, 250),
                       fontSize: 11.8,
@@ -543,25 +557,32 @@ class Gameday3 extends StatelessWidget {
             ),
             Positioned(
               top: 830,
-              left: 5,
-              child: Image.asset(
-                'assets/KT.png',
-                width: 160,
+              left: 30,
+              child: Opacity(
+                opacity: 0.5,
+                child: Image.asset(
+                  'assets/lgemblem.png',
+                  width: 100,
+                ),
               ),
             ),
             Positioned(
               top: 860,
               left: 145,
               child: Text(
-                '6',
-                style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+                '0',
+                style: TextStyle(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(82, 0, 0, 0),
+                ),
               ),
             ),
             Positioned(
-              top: 860,
-              left: 180,
+              top: 865,
+              left: 190,
               child: Text(
-                '패배',
+                'VS',
                 style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
               ),
             ),
@@ -570,15 +591,22 @@ class Gameday3 extends StatelessWidget {
               right: 130,
               child: Text(
                 '0',
-                style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(66, 0, 0, 0),
+                ),
               ),
             ),
             Positioned(
               top: 840,
               right: 0,
-              child: Image.asset(
-                'assets/emblem.png',
-                width: 150,
+              child: Opacity(
+                opacity: 0.5,
+                child: Image.asset(
+                  'assets/emblem.png',
+                  width: 150,
+                ),
               ),
             ),
             Positioned(
@@ -603,7 +631,7 @@ class Gameday3 extends StatelessWidget {
               top: 1000,
               left: 35,
               child: Text(
-                '7 (토) 오후 17:00',
+                '7 (일) 오후 14:00',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -639,20 +667,20 @@ class Gameday3 extends StatelessWidget {
             ),
             Positioned(
               top: 1025,
-              left: 5,
+              left: 30,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/KT.png',
-                  width: 160,
+                  'assets/lgemblem.png',
+                  width: 100,
                 ),
               ),
             ),
             Positioned(
               top: 1055,
-              left: 145,
+              left: 140,
               child: Text(
-                '8',
+                '11',
                 style: TextStyle(
                     fontSize: 35,
                     fontWeight: FontWeight.bold,
@@ -661,20 +689,20 @@ class Gameday3 extends StatelessWidget {
             ),
             Positioned(
               top: 1055,
-              left: 180,
+              left: 190,
               child: Text(
-                '승리',
+                '패배',
                 style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 245, 18, 2)),
+                    color: Color.fromARGB(255, 2, 2, 2)),
               ),
             ),
             Positioned(
               top: 1055,
               right: 120,
               child: Text(
-                '11',
+                '1',
                 style: TextStyle(
                     fontSize: 35,
                     fontWeight: FontWeight.bold,
@@ -714,7 +742,7 @@ class Gameday3 extends StatelessWidget {
               top: 1200,
               left: 35,
               child: Text(
-                '8 (일) 오후 14:00',
+                '9 (화) 오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -722,7 +750,7 @@ class Gameday3 extends StatelessWidget {
               top: 1200,
               right: 85,
               child: Text(
-                '잠실',
+                '사직',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -746,13 +774,13 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 1225,
-              left: 5,
+              top: 1235,
+              left: 15,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/KT.png',
-                  width: 160,
+                  'assets/emblem.png',
+                  width: 150,
                 ),
               ),
             ),
@@ -771,15 +799,19 @@ class Gameday3 extends StatelessWidget {
               top: 1255,
               left: 180,
               child: Text(
-                '패배',
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                '승리',
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.redAccent,
+                ),
               ),
             ),
             Positioned(
               top: 1255,
               right: 130,
               child: Text(
-                '0',
+                '2',
                 style: TextStyle(
                     fontSize: 35,
                     fontWeight: FontWeight.bold,
@@ -787,13 +819,13 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 1235,
-              right: 0,
+              top: 1237,
+              right: 20,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
+                  'assets/lotte.png',
+                  width: 95,
                 ),
               ),
             ),
@@ -819,7 +851,7 @@ class Gameday3 extends StatelessWidget {
               top: 1400,
               left: 35,
               child: Text(
-                '10 (화) 오후 18:30',
+                '10 (수) 오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -827,7 +859,7 @@ class Gameday3 extends StatelessWidget {
               top: 1400,
               right: 85,
               child: Text(
-                '고척',
+                '사직',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -865,7 +897,7 @@ class Gameday3 extends StatelessWidget {
               top: 1455,
               left: 145,
               child: Text(
-                '9',
+                '0',
                 style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
               ),
             ),
@@ -873,29 +905,29 @@ class Gameday3 extends StatelessWidget {
               top: 1455,
               left: 182,
               child: Text(
-                '승리',
+                '패배',
                 style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 255, 17, 0)),
+                    color: Color.fromARGB(255, 2, 2, 2)),
               ),
             ),
             Positioned(
               top: 1455,
               right: 130,
               child: Text(
-                '0',
+                '3',
                 style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
               ),
             ),
             Positioned(
-              top: 1430,
+              top: 1437,
               right: 20,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/kiwoom.png',
-                  width: 100,
+                  'assets/lotte.png',
+                  width: 95,
                 ),
               ),
             ),
@@ -921,7 +953,7 @@ class Gameday3 extends StatelessWidget {
               top: 1600,
               left: 35,
               child: Text(
-                '11 (수) 오후 18:30',
+                '11 (목) 오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -929,7 +961,7 @@ class Gameday3 extends StatelessWidget {
               top: 1600,
               right: 85,
               child: Text(
-                '고척',
+                '사직',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -967,7 +999,7 @@ class Gameday3 extends StatelessWidget {
               top: 1655,
               left: 145,
               child: Text(
-                '5',
+                '6',
                 style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
               ),
             ),
@@ -975,29 +1007,29 @@ class Gameday3 extends StatelessWidget {
               top: 1655,
               left: 185,
               child: Text(
-                '승리',
+                '패배',
                 style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 235, 19, 19)),
+                    color: Color.fromARGB(255, 0, 0, 0)),
               ),
             ),
             Positioned(
               top: 1655,
               right: 130,
               child: Text(
-                '1',
+                '7',
                 style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
               ),
             ),
             Positioned(
-              top: 1630,
+              top: 1637,
               right: 20,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/kiwoom.png',
-                  width: 100,
+                  'assets/lotte.png',
+                  width: 95,
                 ),
               ),
             ),
@@ -1023,7 +1055,7 @@ class Gameday3 extends StatelessWidget {
               top: 1800,
               left: 35,
               child: Text(
-                '12 (목) 오후 18:30',
+                '12 (금) 오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -1031,7 +1063,7 @@ class Gameday3 extends StatelessWidget {
               top: 1800,
               right: 85,
               child: Text(
-                '고척',
+                '잠실',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -1055,13 +1087,13 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 1835,
-              left: 15,
+              top: 1830,
+              left: 35,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
+                  'assets/kia.png',
+                  width: 100,
                 ),
               ),
             ),
@@ -1069,7 +1101,7 @@ class Gameday3 extends StatelessWidget {
               top: 1855,
               left: 145,
               child: Text(
-                '3',
+                '1',
                 style: TextStyle(
                     fontSize: 35,
                     fontWeight: FontWeight.bold,
@@ -1091,7 +1123,7 @@ class Gameday3 extends StatelessWidget {
               top: 1855,
               right: 130,
               child: Text(
-                '2',
+                '6',
                 style: TextStyle(
                     fontSize: 35,
                     fontWeight: FontWeight.bold,
@@ -1099,13 +1131,13 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 1830,
-              right: 20,
+              top: 1835,
+              right: 0,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/kiwoom.png',
-                  width: 100,
+                  'assets/emblem.png',
+                  width: 150,
                 ),
               ),
             ),
@@ -1131,7 +1163,7 @@ class Gameday3 extends StatelessWidget {
               top: 2000,
               left: 35,
               child: Text(
-                '13 (금) 오후 18:30',
+                '13 (토) 오후 17:00',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -1139,7 +1171,7 @@ class Gameday3 extends StatelessWidget {
               top: 2000,
               right: 85,
               child: Text(
-                '대구',
+                '잠실',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -1150,10 +1182,10 @@ class Gameday3 extends StatelessWidget {
               height: 20,
               child: Container(
                 decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 238, 0, 0),
+                    color: Color.fromARGB(255, 5, 5, 5),
                     borderRadius: BorderRadius.circular(15)),
                 child: Text(
-                  '경기취소',
+                  '경기종료',
                   style: TextStyle(
                       color: Color.fromARGB(255, 248, 248, 248),
                       fontSize: 11.8,
@@ -1163,13 +1195,13 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 2035,
-              left: 15,
+              top: 2030,
+              left: 35,
               child: Opacity(
-                opacity: 0.5,
+                opacity: 1,
                 child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
+                  'assets/kia.png',
+                  width: 100,
                 ),
               ),
             ),
@@ -1177,43 +1209,45 @@ class Gameday3 extends StatelessWidget {
               top: 2055,
               left: 145,
               child: Text(
-                '0',
+                '1',
                 style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(78, 0, 0, 0)),
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 0, 0, 0),
+                ),
               ),
             ),
             Positioned(
               top: 2055,
               left: 179,
               child: Text(
-                'VS',
+                '승리',
                 style: TextStyle(
-                    fontSize: 35,
+                    fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 10, 10, 10)),
+                    color: Color.fromARGB(255, 243, 2, 2)),
               ),
             ),
             Positioned(
               top: 2055,
               right: 130,
               child: Text(
-                '0',
+                '5',
                 style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(57, 0, 0, 0)),
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 0, 0, 0),
+                ),
               ),
             ),
             Positioned(
               top: 2035,
-              right: 30,
+              right: 0,
               child: Opacity(
-                opacity: 0.5,
+                opacity: 1,
                 child: Image.asset(
-                  'assets/samsung.png',
-                  width: 90,
+                  'assets/emblem.png',
+                  width: 150,
                 ),
               ),
             ),
@@ -1239,7 +1273,7 @@ class Gameday3 extends StatelessWidget {
               top: 2200,
               left: 35,
               child: Text(
-                '14 (토) 오후 17:00',
+                '14 (일) 오후 14:00',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -1247,7 +1281,7 @@ class Gameday3 extends StatelessWidget {
               top: 2200,
               right: 85,
               child: Text(
-                '대구',
+                '잠실',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -1271,13 +1305,13 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 2235,
-              left: 15,
+              top: 2230,
+              left: 35,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
+                  'assets/kia.png',
+                  width: 100,
                 ),
               ),
             ),
@@ -1285,7 +1319,7 @@ class Gameday3 extends StatelessWidget {
               top: 2250,
               left: 145,
               child: Text(
-                '0',
+                '4',
                 style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
               ),
             ),
@@ -1293,29 +1327,29 @@ class Gameday3 extends StatelessWidget {
               top: 2250,
               left: 178,
               child: Text(
-                '패배',
+                '승리',
                 style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 17, 17, 17)),
+                    color: Color.fromARGB(255, 241, 3, 3)),
               ),
             ),
             Positioned(
               top: 2250,
               right: 130,
               child: Text(
-                '4',
+                '8',
                 style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
               ),
             ),
             Positioned(
-              top: 2235,
-              right: 30,
+              top: 2230,
+              right: 0,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/samsung.png',
-                  width: 90,
+                  'assets/emblem.png',
+                  width: 150,
                 ),
               ),
             ),
@@ -1341,7 +1375,7 @@ class Gameday3 extends StatelessWidget {
               top: 2400,
               left: 35,
               child: Text(
-                '15 (일) 오후 14:00',
+                '16 (화) 오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -1349,7 +1383,7 @@ class Gameday3 extends StatelessWidget {
               top: 2400,
               right: 85,
               child: Text(
-                '대구',
+                '고척',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -1387,7 +1421,7 @@ class Gameday3 extends StatelessWidget {
               top: 2450,
               left: 145,
               child: Text(
-                '3',
+                '4',
                 style: TextStyle(
                     fontSize: 35,
                     fontWeight: FontWeight.bold,
@@ -1398,18 +1432,18 @@ class Gameday3 extends StatelessWidget {
               top: 2450,
               left: 180,
               child: Text(
-                '패배',
+                '승리',
                 style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 0, 0, 0)),
+                    color: Color.fromARGB(255, 240, 5, 5)),
               ),
             ),
             Positioned(
               top: 2450,
               right: 130,
               child: Text(
-                '4',
+                '1',
                 style: TextStyle(
                     fontSize: 35,
                     fontWeight: FontWeight.bold,
@@ -1417,13 +1451,13 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 2435,
-              right: 30,
+              top: 2427,
+              right: 25,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/samsung.png',
-                  width: 90,
+                  'assets/kiwoom.png',
+                  width: 100,
                 ),
               ),
             ),
@@ -1449,7 +1483,7 @@ class Gameday3 extends StatelessWidget {
               top: 2600,
               left: 35,
               child: Text(
-                '17 (화) 오후 18:30',
+                '17 (수) 오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -1481,12 +1515,12 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 2625,
+              top: 2640,
               left: 15,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/ssg.png',
+                  'assets/emblem.png',
                   width: 150,
                 ),
               ),
@@ -1504,20 +1538,20 @@ class Gameday3 extends StatelessWidget {
             ),
             Positioned(
               top: 2660,
-              left: 170,
+              left: 185,
               child: Text(
-                '무승부',
+                '승리',
                 style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 17, 17, 17)),
+                    color: Color.fromARGB(255, 243, 3, 3)),
               ),
             ),
             Positioned(
               top: 2660,
-              right: 130,
+              right: 125,
               child: Text(
-                '9',
+                '6',
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -1526,12 +1560,12 @@ class Gameday3 extends StatelessWidget {
             ),
             Positioned(
               top: 2635,
-              right: 0,
+              right: 20,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
+                  'assets/kiwoom.png',
+                  width: 100,
                 ),
               ),
             ),
@@ -1557,7 +1591,7 @@ class Gameday3 extends StatelessWidget {
               top: 2800,
               left: 35,
               child: Text(
-                '18 (수) 오후 18:30',
+                '18 (목) 오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -1565,7 +1599,7 @@ class Gameday3 extends StatelessWidget {
               top: 2800,
               right: 85,
               child: Text(
-                '잠실',
+                '고척',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -1589,12 +1623,12 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 2825,
+              top: 2845,
               left: 15,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/ssg.png',
+                  'assets/emblem.png',
                   width: 150,
                 ),
               ),
@@ -1603,13 +1637,13 @@ class Gameday3 extends StatelessWidget {
               top: 2865,
               left: 145,
               child: Text(
-                '5',
+                '3',
                 style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
               ),
             ),
             Positioned(
               top: 2865,
-              left: 179,
+              left: 182,
               child: Text(
                 '패배',
                 style: TextStyle(
@@ -1620,20 +1654,20 @@ class Gameday3 extends StatelessWidget {
             ),
             Positioned(
               top: 2864,
-              right: 130,
+              right: 125,
               child: Text(
-                '2',
+                '7',
                 style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
               ),
             ),
             Positioned(
               top: 2840,
-              right: 0,
+              right: 20,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
+                  'assets/kiwoom.png',
+                  width: 100,
                 ),
               ),
             ),
@@ -1659,7 +1693,7 @@ class Gameday3 extends StatelessWidget {
               top: 3000,
               left: 35,
               child: Text(
-                '19 (목) 오후 18:30',
+                '19 (금) 오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -1667,7 +1701,7 @@ class Gameday3 extends StatelessWidget {
               top: 3000,
               right: 85,
               child: Text(
-                '잠실',
+                '수원',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -1691,12 +1725,12 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 3025,
+              top: 3040,
               left: 15,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/ssg.png',
+                  'assets/emblem.png',
                   width: 150,
                 ),
               ),
@@ -1705,7 +1739,7 @@ class Gameday3 extends StatelessWidget {
               top: 3060,
               left: 147,
               child: Text(
-                '9',
+                '1',
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -1725,9 +1759,9 @@ class Gameday3 extends StatelessWidget {
             ),
             Positioned(
               top: 3059,
-              right: 130,
+              right: 125,
               child: Text(
-                '3',
+                '6',
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -1735,12 +1769,12 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 3035,
+              top: 3030,
               right: 0,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/emblem.png',
+                  'assets/KT.png',
                   width: 150,
                 ),
               ),
@@ -1767,7 +1801,7 @@ class Gameday3 extends StatelessWidget {
               top: 3200,
               left: 35,
               child: Text(
-                '20 (금) 오후 18:30',
+                '20 (토) 오후 17:00',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -1775,7 +1809,7 @@ class Gameday3 extends StatelessWidget {
               top: 3200,
               right: 85,
               child: Text(
-                '잠실',
+                '수원',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -1799,13 +1833,13 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 3242,
-              left: 37,
+              top: 3240,
+              left: 15,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/lotte.jpg',
-                  width: 90,
+                  'assets/emblem.png',
+                  width: 150,
                 ),
               ),
             ),
@@ -1813,7 +1847,7 @@ class Gameday3 extends StatelessWidget {
               top: 3255,
               left: 147,
               child: Text(
-                '4',
+                '6',
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -1824,16 +1858,16 @@ class Gameday3 extends StatelessWidget {
               top: 3255,
               left: 185,
               child: Text(
-                '패배',
+                '승리',
                 style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 8, 8, 8)),
+                    color: Color.fromARGB(255, 241, 5, 5)),
               ),
             ),
             Positioned(
               top: 3255,
-              right: 130,
+              right: 125,
               child: Text(
                 '0',
                 style: TextStyle(
@@ -1843,12 +1877,12 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 3235,
+              top: 3230,
               right: 0,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/emblem.png',
+                  'assets/KT.png',
                   width: 150,
                 ),
               ),
@@ -1875,7 +1909,7 @@ class Gameday3 extends StatelessWidget {
               top: 3400,
               left: 35,
               child: Text(
-                '21 (토) 오후 17:00',
+                '21 (일) 오후 14:00',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -1883,7 +1917,7 @@ class Gameday3 extends StatelessWidget {
               top: 3400,
               right: 85,
               child: Text(
-                '잠실',
+                '수원',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -1907,13 +1941,13 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 3440,
-              left: 37,
+              top: 3435,
+              left: 15,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/lotte.jpg',
-                  width: 90,
+                  'assets/emblem.png',
+                  width: 150,
                 ),
               ),
             ),
@@ -1921,7 +1955,7 @@ class Gameday3 extends StatelessWidget {
               top: 3450,
               left: 147,
               child: Text(
-                '4',
+                '3',
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -1930,20 +1964,20 @@ class Gameday3 extends StatelessWidget {
             ),
             Positioned(
               top: 3450,
-              left: 181,
+              left: 185,
               child: Text(
-                '승리',
+                '패배',
                 style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 243, 3, 3)),
+                    color: Color.fromARGB(255, 0, 0, 0)),
               ),
             ),
             Positioned(
               top: 3450,
-              right: 120,
+              right: 125,
               child: Text(
-                '12',
+                '7',
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -1951,12 +1985,12 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 3428,
+              top: 3420,
               right: -5,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/emblem.png',
+                  'assets/KT.png',
                   width: 150,
                 ),
               ),
@@ -1983,7 +2017,7 @@ class Gameday3 extends StatelessWidget {
               top: 3600,
               left: 35,
               child: Text(
-                '22 (일) 오후 14:00',
+                '23 (화) 오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -2016,11 +2050,11 @@ class Gameday3 extends StatelessWidget {
             ),
             Positioned(
               top: 3640,
-              left: 37,
+              left: 43,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/lotte.jpg',
+                  'assets/samsung.png',
                   width: 90,
                 ),
               ),
@@ -2040,18 +2074,18 @@ class Gameday3 extends StatelessWidget {
               top: 3650,
               left: 185,
               child: Text(
-                '패배',
+                '승리',
                 style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 0, 0, 0)),
+                    color: Color.fromARGB(255, 241, 2, 2)),
               ),
             ),
             Positioned(
               top: 3650,
               right: 130,
               child: Text(
-                '4',
+                '7',
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -2091,7 +2125,7 @@ class Gameday3 extends StatelessWidget {
               top: 3800,
               left: 35,
               child: Text(
-                '24 (화) 오후 18:30',
+                '24 (수) 오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -2099,7 +2133,7 @@ class Gameday3 extends StatelessWidget {
               top: 3800,
               right: 85,
               child: Text(
-                '대전',
+                '잠실',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -2123,13 +2157,13 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 3835,
-              left: 10,
+              top: 3845,
+              left: 40,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
+                  'assets/samsung.png',
+                  width: 90,
                 ),
               ),
             ),
@@ -2137,7 +2171,7 @@ class Gameday3 extends StatelessWidget {
               top: 3855,
               left: 147,
               child: Text(
-                '3',
+                '6',
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -2159,7 +2193,7 @@ class Gameday3 extends StatelessWidget {
               top: 3855,
               right: 130,
               child: Text(
-                '6',
+                '1',
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -2167,12 +2201,12 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 3810,
+              top: 3830,
               right: 0,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/hanwha.png',
+                  'assets/emblem.png',
                   width: 150,
                 ),
               ),
@@ -2199,7 +2233,7 @@ class Gameday3 extends StatelessWidget {
               top: 4000,
               left: 35,
               child: Text(
-                '25 (수) 오후 18:30',
+                '25 (목) 오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -2207,7 +2241,7 @@ class Gameday3 extends StatelessWidget {
               top: 4000,
               right: 85,
               child: Text(
-                '대전',
+                '잠실',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -2231,13 +2265,13 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 4035,
-              left: 10,
+              top: 4045,
+              left: 40,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/emblem.png',
-                  width: 150,
+                  'assets/samsung.png',
+                  width: 90,
                 ),
               ),
             ),
@@ -2245,7 +2279,7 @@ class Gameday3 extends StatelessWidget {
               top: 4055,
               left: 147,
               child: Text(
-                '1',
+                '3',
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -2254,20 +2288,20 @@ class Gameday3 extends StatelessWidget {
             ),
             Positioned(
               top: 4055,
-              left: 180,
+              left: 185,
               child: Text(
-                '패배',
+                '승리',
                 style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 12, 12, 12)),
+                    color: Color.fromARGB(255, 236, 3, 3)),
               ),
             ),
             Positioned(
               top: 4054,
-              right: 120,
+              right: 125,
               child: Text(
-                '14',
+                '4',
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -2275,12 +2309,12 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 4010,
-              right: -5,
+              top: 4032,
+              right: 0,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/hanwha.png',
+                  'assets/emblem.png',
                   width: 150,
                 ),
               ),
@@ -2307,7 +2341,7 @@ class Gameday3 extends StatelessWidget {
               top: 4200,
               left: 35,
               child: Text(
-                '26 (목) 오후 18:30',
+                '26 (금) 오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -2315,7 +2349,7 @@ class Gameday3 extends StatelessWidget {
               top: 4200,
               right: 85,
               child: Text(
-                '대전',
+                '잠실',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -2339,12 +2373,12 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 4235,
+              top: 4225,
               left: 10,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/emblem.png',
+                  'assets/ssg.png',
                   width: 150,
                 ),
               ),
@@ -2353,7 +2387,7 @@ class Gameday3 extends StatelessWidget {
               top: 4255,
               left: 135,
               child: Text(
-                '24',
+                '14',
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -2383,12 +2417,12 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 4210,
+              top: 4232,
               right: -5,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/hanwha.png',
+                  'assets/emblem.png',
                   width: 150,
                 ),
               ),
@@ -2415,7 +2449,7 @@ class Gameday3 extends StatelessWidget {
               top: 4400,
               left: 35,
               child: Text(
-                '27 (금) 오후 18:30',
+                '27 (토) 오후 14:00',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -2423,7 +2457,7 @@ class Gameday3 extends StatelessWidget {
               top: 4400,
               right: 85,
               child: Text(
-                '창원',
+                '잠실',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -2434,10 +2468,10 @@ class Gameday3 extends StatelessWidget {
               height: 20,
               child: Container(
                 decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 0, 0, 0),
+                    color: Color.fromARGB(255, 241, 3, 3),
                     borderRadius: BorderRadius.circular(15)),
                 child: Text(
-                  '경기종료',
+                  '경기취소',
                   style: TextStyle(
                       color: Color.fromARGB(255, 248, 248, 248),
                       fontSize: 11.8,
@@ -2447,12 +2481,12 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 4435,
+              top: 4425,
               left: 10,
               child: Opacity(
-                opacity: 1,
+                opacity: 0.5,
                 child: Image.asset(
-                  'assets/emblem.png',
+                  'assets/ssg.png',
                   width: 150,
                 ),
               ),
@@ -2461,42 +2495,42 @@ class Gameday3 extends StatelessWidget {
               top: 4455,
               left: 147,
               child: Text(
-                '6',
+                '0',
                 style: TextStyle(
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                ),
+                    fontSize: 35,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(99, 0, 0, 0)),
               ),
             ),
             Positioned(
               top: 4455,
               left: 185,
               child: Text(
-                '승리',
+                'VS',
                 style: TextStyle(
-                    fontSize: 25,
+                    fontSize: 35,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 248, 2, 2)),
+                    color: Color.fromARGB(255, 3, 3, 3)),
               ),
             ),
             Positioned(
               top: 4455,
               right: 130,
               child: Text(
-                '1',
+                '0',
                 style: TextStyle(
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                ),
+                    fontSize: 35,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(101, 0, 0, 0)),
               ),
             ),
             Positioned(
-              top: 4430,
+              top: 4432,
               right: 0,
               child: Opacity(
-                opacity: 1,
+                opacity: 0.5,
                 child: Image.asset(
-                  'assets/NC.png',
+                  'assets/emblem.png',
                   width: 150,
                 ),
               ),
@@ -2523,7 +2557,7 @@ class Gameday3 extends StatelessWidget {
               top: 4600,
               left: 35,
               child: Text(
-                '28 (토) 오후 17:00',
+                '28 (일) 오후 14:00',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -2531,7 +2565,7 @@ class Gameday3 extends StatelessWidget {
               top: 4600,
               right: 85,
               child: Text(
-                '창원',
+                '잠실',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -2542,10 +2576,10 @@ class Gameday3 extends StatelessWidget {
               height: 20,
               child: Container(
                 decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 0, 0, 0),
+                    color: Color.fromARGB(255, 250, 2, 2),
                     borderRadius: BorderRadius.circular(15)),
                 child: Text(
-                  '경기종료',
+                  '경기취소',
                   style: TextStyle(
                       color: Color.fromARGB(255, 248, 248, 248),
                       fontSize: 11.8,
@@ -2555,12 +2589,12 @@ class Gameday3 extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 4635,
+              top: 4625,
               left: 10,
               child: Opacity(
-                opacity: 1,
+                opacity: 0.5,
                 child: Image.asset(
-                  'assets/emblem.png',
+                  'assets/ssg.png',
                   width: 150,
                 ),
               ),
@@ -2571,18 +2605,18 @@ class Gameday3 extends StatelessWidget {
               child: Text(
                 '0',
                 style: TextStyle(
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                ),
+                    fontSize: 35,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(88, 0, 0, 0)),
               ),
             ),
             Positioned(
               top: 4655,
               left: 185,
               child: Text(
-                '패배',
+                'VS',
                 style: TextStyle(
-                    fontSize: 25,
+                    fontSize: 35,
                     fontWeight: FontWeight.bold,
                     color: Color.fromARGB(255, 0, 0, 0)),
               ),
@@ -2591,20 +2625,20 @@ class Gameday3 extends StatelessWidget {
               top: 4655,
               right: 130,
               child: Text(
-                '5',
+                '0',
                 style: TextStyle(
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                ),
+                    fontSize: 35,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(96, 0, 0, 0)),
               ),
             ),
             Positioned(
-              top: 4630,
+              top: 4632,
               right: 00,
               child: Opacity(
-                opacity: 1,
+                opacity: 0.5,
                 child: Image.asset(
-                  'assets/NC.png',
+                  'assets/emblem.png',
                   width: 150,
                 ),
               ),
@@ -2631,7 +2665,7 @@ class Gameday3 extends StatelessWidget {
               top: 4800,
               left: 35,
               child: Text(
-                '29 (일) 오후 14:00',
+                '30 (화) 오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -2650,10 +2684,10 @@ class Gameday3 extends StatelessWidget {
               height: 20,
               child: Container(
                 decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 0, 0, 0),
+                    color: Color.fromARGB(255, 2, 6, 199),
                     borderRadius: BorderRadius.circular(15)),
                 child: Text(
-                  '경기종료',
+                  '경기예정',
                   style: TextStyle(
                       color: Color.fromARGB(255, 248, 248, 248),
                       fontSize: 11.8,
@@ -2677,7 +2711,7 @@ class Gameday3 extends StatelessWidget {
               top: 4855,
               left: 147,
               child: Text(
-                '1',
+                '0',
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -2686,20 +2720,20 @@ class Gameday3 extends StatelessWidget {
             ),
             Positioned(
               top: 4855,
-              left: 185,
+              left: 180,
               child: Text(
-                '승리',
+                '패배',
                 style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 255, 3, 3)),
+                    color: Color.fromARGB(255, 0, 0, 0)),
               ),
             ),
             Positioned(
               top: 4855,
               right: 130,
               child: Text(
-                '0',
+                '5',
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -2739,7 +2773,7 @@ class Gameday3 extends StatelessWidget {
               top: 5000,
               left: 35,
               child: Text(
-                '31 (화) 오후 18:30',
+                '31 (수) 오후 18:30',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -2747,7 +2781,7 @@ class Gameday3 extends StatelessWidget {
               top: 5000,
               right: 85,
               child: Text(
-                '잠실',
+                '창원',
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
@@ -2758,10 +2792,10 @@ class Gameday3 extends StatelessWidget {
               height: 20,
               child: Container(
                 decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 0, 0, 0),
+                    color: Color.fromARGB(255, 5, 7, 177),
                     borderRadius: BorderRadius.circular(15)),
                 child: Text(
-                  '경기종료',
+                  '경기예정',
                   style: TextStyle(
                       color: Color.fromARGB(255, 248, 248, 248),
                       fontSize: 11.8,
@@ -2772,20 +2806,20 @@ class Gameday3 extends StatelessWidget {
             ),
             Positioned(
               top: 5035,
-              left: 30,
+              left: 15,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/kia.png',
-                  width: 100,
+                  'assets/emblem.png',
+                  width: 150,
                 ),
               ),
             ),
             Positioned(
               top: 5055,
-              left: 135,
+              left: 147,
               child: Text(
-                '13',
+                '3',
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -2794,20 +2828,20 @@ class Gameday3 extends StatelessWidget {
             ),
             Positioned(
               top: 5055,
-              left: 185,
+              left: 180,
               child: Text(
-                '패배',
+                '승리',
                 style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 2, 2, 2)),
+                    color: Color.fromARGB(255, 245, 4, 4)),
               ),
             ),
             Positioned(
               top: 5055,
-              right: 115,
+              right: 130,
               child: Text(
-                '10',
+                '2',
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -2816,11 +2850,11 @@ class Gameday3 extends StatelessWidget {
             ),
             Positioned(
               top: 5035,
-              right: -5,
+              right: 0,
               child: Opacity(
                 opacity: 1,
                 child: Image.asset(
-                  'assets/emblem.png',
+                  'assets/NC.png',
                   width: 150,
                 ),
               ),

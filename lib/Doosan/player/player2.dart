@@ -3607,11 +3607,11 @@ class Player17 extends StatelessWidget {
       body: Stack(
         children: [
           Positioned(
-            top: -65,
-            left: -20,
+            top: -90,
+            left: 55,
             child: Image.asset(
-              'assets/Doologo.png',
-              width: 450,
+              'assets/bears2023.PNG',
+              width: 250,
               height: 500,
             ),
           ),
@@ -3619,7 +3619,232 @@ class Player17 extends StatelessWidget {
             top: 70,
             right: 0,
             child: Image.asset(
-              'assets/player/f15.png',
+              'assets/Player23/Coach/myungchul2.PNG',
+              height: 220,
+            ),
+          ),
+          const Positioned(
+            top: 207,
+            left: 10,
+            child: Text(
+              '82',
+              style: TextStyle(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 207, 18, 5)),
+            ),
+          ),
+          const Positioned(
+            top: 240,
+            left: 10,
+            child: Text(
+              '권명철',
+              style: TextStyle(
+                  fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 1),
+            ),
+          ),
+          const Positioned(
+            top: 263,
+            left: 12,
+            child: Text(
+              '투수코치',
+              style: TextStyle(fontSize: 15, color: Colors.grey),
+            ),
+          ),
+          Positioned(
+            top: 290,
+            child: Container(
+              padding: const EdgeInsets.all(8.0),
+              color: Colors.white,
+              width: 390,
+              height: 2000,
+              child: ContainedTabBarView(
+                tabs: const [
+                  Text(
+                    '코칭스탭 정보',
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    '주요경력',
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
+                  ),
+                ],
+                views: [
+                  Stack(
+                    children: [
+                      Positioned(
+                        top: 15,
+                        left: 20,
+                        child: const Text(
+                          '코칭스텝 소개',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Positioned(
+                        top: 70,
+                        left: 20,
+                        child: const Text(
+                          '포지션',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 68,
+                        left: 100,
+                        child: const Text(
+                          '투수코치',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 110,
+                        left: 20,
+                        child: const Text(
+                          '생년월일',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 108,
+                        left: 100,
+                        child: const Text(
+                          '1969년 10월 28일',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 150,
+                        left: 20,
+                        child: const Text(
+                          '신장/체중',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 148,
+                        left: 100,
+                        child: const Text(
+                          '183cm / 90kg',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 190,
+                        left: 20,
+                        child: const Text(
+                          '출신학교',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 188,
+                        left: 100,
+                        child: const Text(
+                          '인천서화초-동인천중-인천고-인하대',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 230,
+                        left: 20,
+                        child: const Text(
+                          '입단년도',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 228,
+                        left: 100,
+                        child: const Text(
+                          '2012년',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Stack(
+                    children: [
+                      Positioned(
+                        top: 15,
+                        left: 20,
+                        child: Text(
+                          '주요경력 소개',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Positioned(
+                        top: 55,
+                        left: 20,
+                        child: Text(
+                          'OB 베어스 (1992~1998)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 95,
+                        left: 20,
+                        child: Text(
+                          '두산 베어스 (2003~2004)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 135,
+                        left: 20,
+                        child: Text(
+                          '두산 베어스 투수코치 (2012~)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Player18 extends StatelessWidget {
+  const Player18({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.black),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: true,
+      ),
+      extendBodyBehindAppBar: true,
+      body: Stack(
+        children: [
+          Positioned(
+            top: -90,
+            left: 55,
+            child: Image.asset(
+              'assets/bears2023.PNG',
+              width: 250,
+              height: 500,
+            ),
+          ),
+          Positioned(
+            top: 70,
+            right: 0,
+            child: Image.asset(
+              'assets/Player23/Coach/sangjin2.PNG',
               height: 220,
             ),
           ),
@@ -3678,7 +3903,7 @@ class Player17 extends StatelessWidget {
                         top: 15,
                         left: 20,
                         child: const Text(
-                          '코칭스텝소개',
+                          '코칭스텝 소개',
                           style: TextStyle(
                               fontSize: 18,
                               color: Colors.black,
@@ -3745,7 +3970,7 @@ class Player17 extends StatelessWidget {
                         top: 188,
                         left: 100,
                         child: const Text(
-                          '마산월포초-마산동중-마산제일고',
+                          '마산월포초-마산동중-청강고',
                           style: TextStyle(fontSize: 15, color: Colors.black),
                         ),
                       ),
@@ -3824,264 +4049,7 @@ class Player17 extends StatelessWidget {
                         top: 255,
                         left: 20,
                         child: Text(
-                          '두산 베어스 2군 재활코치 (2020~2021)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 295,
-                        left: 20,
-                        child: Text(
-                          '두산 베어스 재활군 투수코치 (2022~)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                    ],
-                  )
-                ],
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class Player18 extends StatelessWidget {
-  const Player18({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        iconTheme: const IconThemeData(color: Colors.black),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        centerTitle: true,
-      ),
-      extendBodyBehindAppBar: true,
-      body: Stack(
-        children: [
-          Positioned(
-            top: -65,
-            left: -20,
-            child: Image.asset(
-              'assets/Doologo.png',
-              width: 450,
-              height: 500,
-            ),
-          ),
-          Positioned(
-            top: 70,
-            right: 0,
-            child: Image.asset(
-              'assets/player/f16.png',
-              height: 220,
-            ),
-          ),
-          const Positioned(
-            top: 207,
-            left: 10,
-            child: Text(
-              '80',
-              style: TextStyle(
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 207, 18, 5)),
-            ),
-          ),
-          const Positioned(
-            top: 240,
-            left: 10,
-            child: Text(
-              '김진수',
-              style: TextStyle(
-                  fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 1),
-            ),
-          ),
-          const Positioned(
-            top: 263,
-            left: 12,
-            child: Text(
-              '배터리코치',
-              style: TextStyle(fontSize: 15, color: Colors.grey),
-            ),
-          ),
-          Positioned(
-            top: 290,
-            child: Container(
-              padding: const EdgeInsets.all(8.0),
-              color: Colors.white,
-              width: 390,
-              height: 2000,
-              child: ContainedTabBarView(
-                tabs: const [
-                  Text(
-                    '코칭스탭 정보',
-                    style: TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.bold),
-                  ),
-                  Text(
-                    '주요경력',
-                    style: TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.bold),
-                  ),
-                ],
-                views: [
-                  Stack(
-                    children: [
-                      Positioned(
-                        top: 15,
-                        left: 20,
-                        child: const Text(
-                          '코칭스텝소개',
-                          style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Positioned(
-                        top: 70,
-                        left: 20,
-                        child: const Text(
-                          '포지션',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 68,
-                        left: 100,
-                        child: const Text(
-                          '배터리코치',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 110,
-                        left: 20,
-                        child: const Text(
-                          '생년월일',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 108,
-                        left: 100,
-                        child: const Text(
-                          '1979년 04월 19일',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 150,
-                        left: 20,
-                        child: const Text(
-                          '신장/체중',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 148,
-                        left: 100,
-                        child: const Text(
-                          '180cm / 90kg',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 190,
-                        left: 20,
-                        child: const Text(
-                          '출신학교',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 188,
-                        left: 100,
-                        child: const Text(
-                          '양정초-개성중-경남고-대불',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 230,
-                        left: 20,
-                        child: const Text(
-                          '입단년도',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 228,
-                        left: 100,
-                        child: const Text(
-                          '2011년',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Stack(
-                    children: [
-                      Positioned(
-                        top: 15,
-                        left: 20,
-                        child: Text(
-                          '주요경력 소개',
-                          style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Positioned(
-                        top: 55,
-                        left: 20,
-                        child: Text(
-                          '롯데 자이언츠 (1998~2006)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 95,
-                        left: 20,
-                        child: Text(
-                          '두산 베어스 (2006~2009)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 135,
-                        left: 20,
-                        child: Text(
-                          '상무 피닉스 야구단 배터리코치 (2010~2011)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 175,
-                        left: 20,
-                        child: Text(
-                          '두산 베어스 1,2군 배터리코치 (2012~2017)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 215,
-                        left: 20,
-                        child: Text(
-                          '두산 베어스 잔류군 코치 (2018~2021[1])',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 255,
-                        left: 20,
-                        child: Text(
-                          '두산 베어스 1,2군 배터리코치 (2021~)',
+                          '두산 베어스 투수코치 (2020~)',
                           style: TextStyle(fontSize: 14, letterSpacing: 0.5),
                         ),
                       ),
@@ -4113,11 +4081,11 @@ class Player19 extends StatelessWidget {
       body: Stack(
         children: [
           Positioned(
-            top: -65,
-            left: -20,
+            top: -90,
+            left: 55,
             child: Image.asset(
-              'assets/Doologo.png',
-              width: 450,
+              'assets/bears2023.PNG',
+              width: 250,
               height: 500,
             ),
           ),
@@ -4125,1043 +4093,7 @@ class Player19 extends StatelessWidget {
             top: 70,
             right: 0,
             child: Image.asset(
-              'assets/player/f17.png',
-              height: 220,
-            ),
-          ),
-          const Positioned(
-            top: 207,
-            left: 10,
-            child: Text(
-              '74',
-              style: TextStyle(
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 207, 18, 5)),
-            ),
-          ),
-          const Positioned(
-            top: 240,
-            left: 10,
-            child: Text(
-              '김지훈',
-              style: TextStyle(
-                  fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 1),
-            ),
-          ),
-          const Positioned(
-            top: 263,
-            left: 12,
-            child: Text(
-              '잔류군코치',
-              style: TextStyle(fontSize: 15, color: Colors.grey),
-            ),
-          ),
-          Positioned(
-            top: 290,
-            child: Container(
-              padding: const EdgeInsets.all(8.0),
-              color: Colors.white,
-              width: 390,
-              height: 2000,
-              child: ContainedTabBarView(
-                tabs: const [
-                  Text(
-                    '코칭스탭 정보',
-                    style: TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.bold),
-                  ),
-                  Text(
-                    '주요경력',
-                    style: TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.bold),
-                  ),
-                ],
-                views: [
-                  Stack(
-                    children: [
-                      Positioned(
-                        top: 15,
-                        left: 20,
-                        child: const Text(
-                          '코칭스텝소개',
-                          style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Positioned(
-                        top: 70,
-                        left: 20,
-                        child: const Text(
-                          '포지션',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 68,
-                        left: 100,
-                        child: const Text(
-                          '잔류군코치',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 110,
-                        left: 20,
-                        child: const Text(
-                          '생년월일',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 108,
-                        left: 100,
-                        child: const Text(
-                          '1973년 09월 02일',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 150,
-                        left: 20,
-                        child: const Text(
-                          '신장/체중',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 148,
-                        left: 100,
-                        child: const Text(
-                          '182cm / 93kg',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 190,
-                        left: 20,
-                        child: const Text(
-                          '출신학교',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 188,
-                        left: 100,
-                        child: const Text(
-                          '영중초 - 신일중 - 신일고 - 고려대',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 230,
-                        left: 20,
-                        child: const Text(
-                          '입단년도',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 228,
-                        left: 100,
-                        child: const Text(
-                          '2021년',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Stack(
-                    children: [
-                      Positioned(
-                        top: 15,
-                        left: 20,
-                        child: Text(
-                          '주요경력 소개',
-                          style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Positioned(
-                        top: 55,
-                        left: 20,
-                        child: Text(
-                          '삼성 라이온즈 (1998~2001)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 95,
-                        left: 20,
-                        child: Text(
-                          '해태-KIA 타이거즈 (2001~2004)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 135,
-                        left: 20,
-                        child: Text(
-                          'KIA 타이거즈 1,2군 배터리코치(2005~2019)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 175,
-                        left: 20,
-                        child: Text(
-                          '상무 피닉스 야구단 배터리코치 (2020)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 215,
-                        left: 20,
-                        child: Text(
-                          '두산 베어스 1,2군 배터리코치 (2021)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 255,
-                        left: 20,
-                        child: Text(
-                          '두산 베어스 재활군 배터리코치 (2022~)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                    ],
-                  )
-                ],
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class Player20 extends StatelessWidget {
-  const Player20({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        iconTheme: const IconThemeData(color: Colors.black),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        centerTitle: true,
-      ),
-      extendBodyBehindAppBar: true,
-      body: Stack(
-        children: [
-          Positioned(
-            top: -65,
-            left: -20,
-            child: Image.asset(
-              'assets/Doologo.png',
-              width: 450,
-              height: 500,
-            ),
-          ),
-          Positioned(
-            top: 70,
-            right: 0,
-            child: Image.asset(
-              'assets/player/f18.png',
-              height: 220,
-            ),
-          ),
-          const Positioned(
-            top: 207,
-            left: 10,
-            child: Text(
-              '87',
-              style: TextStyle(
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 207, 18, 5)),
-            ),
-          ),
-          const Positioned(
-            top: 240,
-            left: 10,
-            child: Text(
-              '박철우',
-              style: TextStyle(
-                  fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 1),
-            ),
-          ),
-          const Positioned(
-            top: 263,
-            left: 12,
-            child: Text(
-              '잔류군코치',
-              style: TextStyle(fontSize: 15, color: Colors.grey),
-            ),
-          ),
-          Positioned(
-            top: 290,
-            child: Container(
-              padding: const EdgeInsets.all(8.0),
-              color: Colors.white,
-              width: 390,
-              height: 2000,
-              child: ContainedTabBarView(
-                tabs: const [
-                  Text(
-                    '코칭스탭 정보',
-                    style: TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.bold),
-                  ),
-                  Text(
-                    '주요경력',
-                    style: TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.bold),
-                  ),
-                ],
-                views: [
-                  Stack(
-                    children: [
-                      Positioned(
-                        top: 15,
-                        left: 20,
-                        child: const Text(
-                          '코칭스텝소개',
-                          style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Positioned(
-                        top: 70,
-                        left: 20,
-                        child: const Text(
-                          '포지션',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 68,
-                        left: 100,
-                        child: const Text(
-                          '잔류군코치',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 110,
-                        left: 20,
-                        child: const Text(
-                          '생년월일',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 108,
-                        left: 100,
-                        child: const Text(
-                          '1964년 04월 12일',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 150,
-                        left: 20,
-                        child: const Text(
-                          '신장/체중',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 148,
-                        left: 100,
-                        child: const Text(
-                          '181cm / 91kg',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 190,
-                        left: 20,
-                        child: const Text(
-                          '출신학교',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 188,
-                        left: 100,
-                        child: const Text(
-                          '월산초 - 전남중 - 광주일고 - 동국대',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 230,
-                        left: 20,
-                        child: const Text(
-                          '입단년도',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 228,
-                        left: 100,
-                        child: const Text(
-                          '2015년',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Stack(
-                    children: [
-                      Positioned(
-                        top: 15,
-                        left: 20,
-                        child: Text(
-                          '주요경력 소개',
-                          style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Positioned(
-                        top: 55,
-                        left: 20,
-                        child: Text(
-                          '해태 타이거즈 (1987~1993)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 85,
-                        left: 20,
-                        child: Text(
-                          '쌍방울 레이더스 (1994~1998)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 115,
-                        left: 20,
-                        child: Text(
-                          'SK 와이번스 1군 타격코치 (2000)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 145,
-                        left: 20,
-                        child: Text(
-                          'KIA 타이거즈 1군 타격코치 (2001~2005)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 175,
-                        left: 20,
-                        child: Text(
-                          '광주진흥고등학교 감독 (2006~2009)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 205,
-                        left: 20,
-                        child: Text(
-                          'KIA 타이거즈 2군 총괄코치 (2012)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 235,
-                        left: 20,
-                        child: Text(
-                          'KIA 타이거즈 2군 총괄코치 (2012)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 265,
-                        left: 20,
-                        child: Text(
-                          '고양 원더스 타격코치 (2014)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 295,
-                        left: 20,
-                        child: Text(
-                          '두산베어스 타격코치(2015~2017)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 325,
-                        left: 20,
-                        child: Text(
-                          '두산베어스 1군 벤치코치(2018~2019)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 355,
-                        left: 20,
-                        child: Text(
-                          '두산베어스 2군 감독(2019~2021)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 385,
-                        left: 20,
-                        child: Text(
-                          '두산베어스 타격코치(2022~)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                    ],
-                  )
-                ],
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class Player21 extends StatelessWidget {
-  const Player21({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        iconTheme: const IconThemeData(color: Colors.black),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        centerTitle: true,
-      ),
-      extendBodyBehindAppBar: true,
-      body: Stack(
-        children: [
-          Positioned(
-            top: -65,
-            left: -20,
-            child: Image.asset(
-              'assets/Doologo.png',
-              width: 450,
-              height: 500,
-            ),
-          ),
-          Positioned(
-            top: 70,
-            right: 0,
-            child: Image.asset(
-              'assets/player/f19.png',
-              height: 220,
-            ),
-          ),
-          const Positioned(
-            top: 207,
-            left: 10,
-            child: Text(
-              '',
-              style: TextStyle(
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 207, 18, 5)),
-            ),
-          ),
-          const Positioned(
-            top: 240,
-            left: 10,
-            child: Text(
-              '유종수',
-              style: TextStyle(
-                  fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 1),
-            ),
-          ),
-          const Positioned(
-            top: 263,
-            left: 12,
-            child: Text(
-              '재활코치',
-              style: TextStyle(fontSize: 15, color: Colors.grey),
-            ),
-          ),
-          Positioned(
-            top: 290,
-            child: Container(
-              padding: const EdgeInsets.all(8.0),
-              color: Colors.white,
-              width: 390,
-              height: 2000,
-              child: ContainedTabBarView(
-                tabs: const [
-                  Text(
-                    '코칭스탭 정보',
-                    style: TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.bold),
-                  ),
-                  Text(
-                    '주요경력',
-                    style: TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.bold),
-                  ),
-                ],
-                views: [
-                  Stack(
-                    children: [
-                      Positioned(
-                        top: 15,
-                        left: 20,
-                        child: const Text(
-                          '코칭스텝소개',
-                          style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Positioned(
-                        top: 70,
-                        left: 20,
-                        child: const Text(
-                          '포지션',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 68,
-                        left: 100,
-                        child: const Text(
-                          '재활코치',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 110,
-                        left: 20,
-                        child: const Text(
-                          '생년월일',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 108,
-                        left: 100,
-                        child: const Text(
-                          '1996년 08월 26일',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 150,
-                        left: 20,
-                        child: const Text(
-                          '신장/체중',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 148,
-                        left: 100,
-                        child: const Text(
-                          '186cm / 88kg',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 190,
-                        left: 20,
-                        child: const Text(
-                          '출신학교',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 188,
-                        left: 100,
-                        child: const Text(
-                          '선일초 - 남수원중 - 화홍고 - 경희대',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 230,
-                        left: 20,
-                        child: const Text(
-                          '입단년도',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 228,
-                        left: 100,
-                        child: const Text(
-                          '',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Stack(
-                    children: [
-                      Positioned(
-                        top: 15,
-                        left: 20,
-                        child: Text(
-                          '주요경력 소개',
-                          style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                    ],
-                  )
-                ],
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class Player22 extends StatelessWidget {
-  const Player22({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        iconTheme: const IconThemeData(color: Colors.black),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        centerTitle: true,
-      ),
-      extendBodyBehindAppBar: true,
-      body: Stack(
-        children: [
-          Positioned(
-            top: -65,
-            left: -20,
-            child: Image.asset(
-              'assets/Doologo.png',
-              width: 450,
-              height: 500,
-            ),
-          ),
-          Positioned(
-            top: 70,
-            right: 0,
-            child: Image.asset(
-              'assets/player/f20.png',
-              height: 220,
-            ),
-          ),
-          const Positioned(
-            top: 207,
-            left: 10,
-            child: Text(
-              '77',
-              style: TextStyle(
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 207, 18, 5)),
-            ),
-          ),
-          const Positioned(
-            top: 240,
-            left: 10,
-            child: Text(
-              '이광우',
-              style: TextStyle(
-                  fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 1),
-            ),
-          ),
-          const Positioned(
-            top: 263,
-            left: 12,
-            child: Text(
-              '트레이닝코치',
-              style: TextStyle(fontSize: 15, color: Colors.grey),
-            ),
-          ),
-          Positioned(
-            top: 290,
-            child: Container(
-              padding: const EdgeInsets.all(8.0),
-              color: Colors.white,
-              width: 390,
-              height: 2000,
-              child: ContainedTabBarView(
-                tabs: const [
-                  Text(
-                    '코칭스탭 정보',
-                    style: TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.bold),
-                  ),
-                  Text(
-                    '주요경력',
-                    style: TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.bold),
-                  ),
-                ],
-                views: [
-                  Stack(
-                    children: [
-                      Positioned(
-                        top: 15,
-                        left: 20,
-                        child: const Text(
-                          '코칭스텝소개',
-                          style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Positioned(
-                        top: 70,
-                        left: 20,
-                        child: const Text(
-                          '포지션',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 68,
-                        left: 100,
-                        child: const Text(
-                          '트레이닝코치',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 110,
-                        left: 20,
-                        child: const Text(
-                          '생년월일',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 108,
-                        left: 100,
-                        child: const Text(
-                          '1965년 03월 14일',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 150,
-                        left: 20,
-                        child: const Text(
-                          '신장/체중',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 148,
-                        left: 100,
-                        child: const Text(
-                          '182cm / 83kg',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 190,
-                        left: 20,
-                        child: const Text(
-                          '출신학교',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 188,
-                        left: 100,
-                        child: const Text(
-                          '군산초 - 군산중 - 군산상고 - 원광대',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 230,
-                        left: 20,
-                        child: const Text(
-                          '입단년도',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 228,
-                        left: 100,
-                        child: const Text(
-                          '2014년',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Stack(
-                    children: [
-                      Positioned(
-                        top: 15,
-                        left: 20,
-                        child: Text(
-                          '주요경력 소개',
-                          style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Positioned(
-                        top: 55,
-                        left: 20,
-                        child: Text(
-                          '해태 타이거즈 (1989~1991)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 85,
-                        left: 20,
-                        child: Text(
-                          'OB-두산 베어스 (1992~2001)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 115,
-                        left: 20,
-                        child: Text(
-                          'LG 트윈스 (2002)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 145,
-                        left: 20,
-                        child: Text(
-                          ' KIA 타이거즈 2군,잔류군 투수코치 (2003~2007)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 175,
-                        left: 20,
-                        child: Text(
-                          'KIA 타이거즈 재활코치 (2007~2009)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 205,
-                        left: 20,
-                        child: Text(
-                          '성균관대학교 투수 인스트럭터 (2010)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 235,
-                        left: 20,
-                        child: Text(
-                          '화순고등학교 감독 (2011~2013)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 265,
-                        left: 20,
-                        child: Text(
-                          '두산 베어스 1,2군 투수코치 (2014)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 295,
-                        left: 20,
-                        child: Text(
-                          '두산 베어스 2군 재활코치 (2015)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 325,
-                        left: 20,
-                        child: Text(
-                          '두산 베어스 잔류군 투수코치 (2016~2017)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 355,
-                        left: 20,
-                        child: Text(
-                          '두산 베어스 2군 트레이닝 코치 (2018~)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class Player23 extends StatelessWidget {
-  const Player23({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        iconTheme: const IconThemeData(color: Colors.black),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        centerTitle: true,
-      ),
-      extendBodyBehindAppBar: true,
-      body: Stack(
-        children: [
-          Positioned(
-            top: -65,
-            left: -20,
-            child: Image.asset(
-              'assets/Doologo.png',
-              width: 450,
-              height: 500,
-            ),
-          ),
-          Positioned(
-            top: 70,
-            right: 0,
-            child: Image.asset(
-              'assets/player/f21.png',
+              'assets/Player23/Coach/dohyung2.PNG',
               height: 220,
             ),
           ),
@@ -5220,7 +4152,7 @@ class Player23 extends StatelessWidget {
                         top: 15,
                         left: 20,
                         child: const Text(
-                          '코칭스텝소개',
+                          '코칭스텝 소개',
                           style: TextStyle(
                               fontSize: 18,
                               color: Colors.black,
@@ -5331,7 +4263,7 @@ class Player23 extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                        top: 85,
+                        top: 95,
                         left: 20,
                         child: Text(
                           '한화 이글스 (2002~2010)',
@@ -5339,251 +4271,10 @@ class Player23 extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                        top: 115,
-                        left: 20,
-                        child: Text(
-                          'NC다이노스 2군 배터리코치(2015~2016)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 145,
-                        left: 20,
-                        child: Text(
-                          'NC다이노스 1,2군 타격코치(2017~2018)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 175,
-                        left: 20,
-                        child: Text(
-                          '두산베어스 1,2군 타격코치(2019~)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class Player24 extends StatelessWidget {
-  const Player24({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        iconTheme: const IconThemeData(color: Colors.black),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        centerTitle: true,
-      ),
-      extendBodyBehindAppBar: true,
-      body: Stack(
-        children: [
-          Positioned(
-            top: -65,
-            left: -20,
-            child: Image.asset(
-              'assets/Doologo.png',
-              width: 450,
-              height: 500,
-            ),
-          ),
-          Positioned(
-            top: 70,
-            right: 0,
-            child: Image.asset(
-              'assets/player/f22.png',
-              height: 220,
-            ),
-          ),
-          const Positioned(
-            top: 207,
-            left: 10,
-            child: Text(
-              '79',
-              style: TextStyle(
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 207, 18, 5)),
-            ),
-          ),
-          const Positioned(
-            top: 240,
-            left: 10,
-            child: Text(
-              '정병곤',
-              style: TextStyle(
-                  fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 1),
-            ),
-          ),
-          const Positioned(
-            top: 263,
-            left: 12,
-            child: Text(
-              '수비/작전코치',
-              style: TextStyle(fontSize: 15, color: Colors.grey),
-            ),
-          ),
-          Positioned(
-            top: 290,
-            child: Container(
-              padding: const EdgeInsets.all(8.0),
-              color: Colors.white,
-              width: 390,
-              height: 2000,
-              child: ContainedTabBarView(
-                tabs: const [
-                  Text(
-                    '코칭스탭 정보',
-                    style: TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.bold),
-                  ),
-                  Text(
-                    '주요경력',
-                    style: TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.bold),
-                  ),
-                ],
-                views: [
-                  Stack(
-                    children: [
-                      Positioned(
-                        top: 15,
-                        left: 20,
-                        child: const Text(
-                          '코칭스텝소개',
-                          style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Positioned(
-                        top: 70,
-                        left: 20,
-                        child: const Text(
-                          '포지션',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 68,
-                        left: 100,
-                        child: const Text(
-                          '수비/작전코치',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 110,
-                        left: 20,
-                        child: const Text(
-                          '생년월일',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 108,
-                        left: 100,
-                        child: const Text(
-                          '1988년 03월 23일',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 150,
-                        left: 20,
-                        child: const Text(
-                          '신장/체중',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 148,
-                        left: 100,
-                        child: const Text(
-                          '173cm / 73kg',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 190,
-                        left: 20,
-                        child: const Text(
-                          '출신학교',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 188,
-                        left: 100,
-                        child: const Text(
-                          '내당초 - 경복중 - 경북고 - 단국대',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                      Positioned(
-                        top: 230,
-                        left: 20,
-                        child: const Text(
-                          '입단년도',
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                      Positioned(
-                        top: 228,
-                        left: 100,
-                        child: const Text(
-                          '2021년',
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Stack(
-                    children: [
-                      Positioned(
-                        top: 15,
-                        left: 20,
-                        child: Text(
-                          '주요경력 소개',
-                          style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Positioned(
-                        top: 55,
-                        left: 20,
-                        child: Text(
-                          'LG 트윈스 (2011~2012)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 95,
-                        left: 20,
-                        child: Text(
-                          '삼성 라이온즈 (2013~2018)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
                         top: 135,
                         left: 20,
                         child: Text(
-                          '두산 베어스 (2019)',
+                          'NC 다이노스 타격코치(20015~2018)',
                           style: TextStyle(fontSize: 14, letterSpacing: 0.5),
                         ),
                       ),
@@ -5591,15 +4282,7 @@ class Player24 extends StatelessWidget {
                         top: 175,
                         left: 20,
                         child: Text(
-                          '경북고등학교 수비코치 (2020)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 215,
-                        left: 20,
-                        child: Text(
-                          '두산 베어스 2군 수비·작전코치 (2021~)',
+                          '두산 베어스 타격코치 (2019~)',
                           style: TextStyle(fontSize: 14, letterSpacing: 0.5),
                         ),
                       ),
@@ -5615,8 +4298,8 @@ class Player24 extends StatelessWidget {
   }
 }
 
-class Player25 extends StatelessWidget {
-  const Player25({Key? key}) : super(key: key);
+class Player20 extends StatelessWidget {
+  const Player20({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -5631,11 +4314,11 @@ class Player25 extends StatelessWidget {
       body: Stack(
         children: [
           Positioned(
-            top: -65,
-            left: -20,
+            top: -90,
+            left: 55,
             child: Image.asset(
-              'assets/Doologo.png',
-              width: 450,
+              'assets/bears2023.PNG',
+              width: 250,
               height: 500,
             ),
           ),
@@ -5643,7 +4326,7 @@ class Player25 extends StatelessWidget {
             top: 70,
             right: 0,
             child: Image.asset(
-              'assets/player/f23.png',
+              'assets/Player23/Coach/youngsoo2.PNG',
               height: 220,
             ),
           ),
@@ -5651,7 +4334,7 @@ class Player25 extends StatelessWidget {
             top: 207,
             left: 10,
             child: Text(
-              '73',
+              '91',
               style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -5662,7 +4345,7 @@ class Player25 extends StatelessWidget {
             top: 240,
             left: 10,
             child: Text(
-              '정재훈',
+              '이영수',
               style: TextStyle(
                   fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 1),
             ),
@@ -5671,7 +4354,7 @@ class Player25 extends StatelessWidget {
             top: 263,
             left: 12,
             child: Text(
-              '투수코치',
+              '타격코치',
               style: TextStyle(fontSize: 15, color: Colors.grey),
             ),
           ),
@@ -5702,7 +4385,7 @@ class Player25 extends StatelessWidget {
                         top: 15,
                         left: 20,
                         child: const Text(
-                          '코칭스텝소개',
+                          '코칭스텝 소개',
                           style: TextStyle(
                               fontSize: 18,
                               color: Colors.black,
@@ -5721,7 +4404,7 @@ class Player25 extends StatelessWidget {
                         top: 68,
                         left: 100,
                         child: const Text(
-                          '투수코치',
+                          '타격코치',
                           style: TextStyle(fontSize: 15, color: Colors.black),
                         ),
                       ),
@@ -5737,7 +4420,7 @@ class Player25 extends StatelessWidget {
                         top: 108,
                         left: 100,
                         child: const Text(
-                          '1980년 01월 01일',
+                          '1981년 05월 09일',
                           style: TextStyle(fontSize: 15, color: Colors.black),
                         ),
                       ),
@@ -5753,7 +4436,7 @@ class Player25 extends StatelessWidget {
                         top: 148,
                         left: 100,
                         child: const Text(
-                          '179cm / 81kg',
+                          '184cm / 90kg',
                           style: TextStyle(fontSize: 15, color: Colors.black),
                         ),
                       ),
@@ -5769,7 +4452,7 @@ class Player25 extends StatelessWidget {
                         top: 188,
                         left: 100,
                         child: const Text(
-                          '서울역삼초 - 휘문중 - 휘문고 - 성균관대',
+                          '대구수장초 - 대구경운중 - 대구상고 - 한양대',
                           style: TextStyle(fontSize: 15, color: Colors.black),
                         ),
                       ),
@@ -5785,7 +4468,7 @@ class Player25 extends StatelessWidget {
                         top: 228,
                         left: 100,
                         child: const Text(
-                          '2016년',
+                          '2023년',
                           style: TextStyle(fontSize: 15, color: Colors.black),
                         ),
                       ),
@@ -5808,23 +4491,31 @@ class Player25 extends StatelessWidget {
                         top: 55,
                         left: 20,
                         child: Text(
-                          '두산 베어스 (2003~2014)',
+                          'KIA 타이거즈 (2004~2011)',
                           style: TextStyle(fontSize: 14, letterSpacing: 0.5),
                         ),
                       ),
                       Positioned(
-                        top: 95,
+                        top: 85,
                         left: 20,
                         child: Text(
-                          '롯데 자이언츠 (2015)',
+                          '삼성 라이온즈 (2013)',
                           style: TextStyle(fontSize: 14, letterSpacing: 0.5),
                         ),
                       ),
                       Positioned(
-                        top: 135,
+                        top: 115,
                         left: 20,
                         child: Text(
-                          '두산 베어스 (2016~2017)',
+                          '상무 피닉스 야구단 타격코치 (2014~2011)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 145,
+                        left: 20,
+                        child: Text(
+                          '삼성 라이온즈 타격코치 (2018~2022)',
                           style: TextStyle(fontSize: 14, letterSpacing: 0.5),
                         ),
                       ),
@@ -5832,28 +4523,12 @@ class Player25 extends StatelessWidget {
                         top: 175,
                         left: 20,
                         child: Text(
-                          '두산 베어스 2군 불펜코치 (2018)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 215,
-                        left: 20,
-                        child: Text(
-                          '두산 베어스 1군 불펜코치 (2019~2020)',
-                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
-                        ),
-                      ),
-                      Positioned(
-                        top: 255,
-                        left: 20,
-                        child: Text(
-                          '두산 베어스 1,2군 투수코치 (2020~2022)',
+                          '두산 베어스 2군 타격코치 (2023~)',
                           style: TextStyle(fontSize: 14, letterSpacing: 0.5),
                         ),
                       ),
                     ],
-                  ),
+                  )
                 ],
               ),
             ),
@@ -5864,8 +4539,8 @@ class Player25 extends StatelessWidget {
   }
 }
 
-class Player26 extends StatelessWidget {
-  const Player26({Key? key}) : super(key: key);
+class Player21 extends StatelessWidget {
+  const Player21({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -5880,11 +4555,11 @@ class Player26 extends StatelessWidget {
       body: Stack(
         children: [
           Positioned(
-            top: -65,
-            left: -20,
+            top: -90,
+            left: 55,
             child: Image.asset(
-              'assets/Doologo.png',
-              width: 450,
+              'assets/bears2023.PNG',
+              width: 250,
               height: 500,
             ),
           ),
@@ -5892,7 +4567,7 @@ class Player26 extends StatelessWidget {
             top: 70,
             right: 0,
             child: Image.asset(
-              'assets/player/f24.png',
+              'assets/Player23/Coach/wooseok2.PNG',
               height: 220,
             ),
           ),
@@ -5901,6 +4576,257 @@ class Player26 extends StatelessWidget {
             left: 10,
             child: Text(
               '83',
+              style: TextStyle(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 207, 18, 5)),
+            ),
+          ),
+          const Positioned(
+            top: 240,
+            left: 10,
+            child: Text(
+              '김우석',
+              style: TextStyle(
+                  fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 1),
+            ),
+          ),
+          const Positioned(
+            top: 263,
+            left: 12,
+            child: Text(
+              '작전/수비코치',
+              style: TextStyle(fontSize: 15, color: Colors.grey),
+            ),
+          ),
+          Positioned(
+            top: 290,
+            child: Container(
+              padding: const EdgeInsets.all(8.0),
+              color: Colors.white,
+              width: 390,
+              height: 2000,
+              child: ContainedTabBarView(
+                tabs: const [
+                  Text(
+                    '코칭스탭 정보',
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    '주요경력',
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
+                  ),
+                ],
+                views: [
+                  Stack(
+                    children: [
+                      Positioned(
+                        top: 15,
+                        left: 20,
+                        child: const Text(
+                          '코칭스텝 소개',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Positioned(
+                        top: 70,
+                        left: 20,
+                        child: const Text(
+                          '포지션',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 68,
+                        left: 100,
+                        child: const Text(
+                          '작전/수비코치',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 110,
+                        left: 20,
+                        child: const Text(
+                          '생년월일',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 108,
+                        left: 100,
+                        child: const Text(
+                          '1975년 09월 02일',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 150,
+                        left: 20,
+                        child: const Text(
+                          '신장/체중',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 148,
+                        left: 100,
+                        child: const Text(
+                          '181cm / 79kg',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 190,
+                        left: 20,
+                        child: const Text(
+                          '출신학교',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 188,
+                        left: 100,
+                        child: const Text(
+                          '인천석천초 - 상인천중 - 인천고 - 홍익대',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 230,
+                        left: 20,
+                        child: const Text(
+                          '입단년도',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 228,
+                        left: 100,
+                        child: const Text(
+                          '2023년',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Stack(
+                    children: [
+                      Positioned(
+                        top: 15,
+                        left: 20,
+                        child: Text(
+                          '주요경력 소개',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Positioned(
+                        top: 55,
+                        left: 20,
+                        child: Text(
+                          '포스틸 야구단 (1998~1999)',
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        top: 95,
+                        left: 20,
+                        child: Text(
+                          'LG 트윈스 (2002~2007)',
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        top: 135,
+                        left: 20,
+                        child: Text(
+                          '삼성 라이온즈 (2008)',
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        top: 175,
+                        left: 20,
+                        child: Text(
+                          'LG 트윈스 수비코치 (2014~2022)',
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        top: 215,
+                        left: 20,
+                        child: Text(
+                          '두산 베어스 2군 수비코치 (2023~)',
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Player22 extends StatelessWidget {
+  const Player22({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.black),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: true,
+      ),
+      extendBodyBehindAppBar: true,
+      body: Stack(
+        children: [
+          Positioned(
+            top: -90,
+            left: 55,
+            child: Image.asset(
+              'assets/bears2023.PNG',
+              width: 250,
+              height: 500,
+            ),
+          ),
+          Positioned(
+            top: 70,
+            right: 0,
+            child: Image.asset(
+              'assets/Player23/Coach/jinho2.PNG',
+              height: 220,
+            ),
+          ),
+          const Positioned(
+            top: 207,
+            left: 10,
+            child: Text(
+              '88',
               style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -5920,7 +4846,7 @@ class Player26 extends StatelessWidget {
             top: 263,
             left: 12,
             child: Text(
-              '수비/작전코치',
+              '작전/수비코치',
               style: TextStyle(fontSize: 15, color: Colors.grey),
             ),
           ),
@@ -5951,7 +4877,7 @@ class Player26 extends StatelessWidget {
                         top: 15,
                         left: 20,
                         child: const Text(
-                          '코칭스텝소개',
+                          '코칭스텝 소개',
                           style: TextStyle(
                               fontSize: 18,
                               color: Colors.black,
@@ -5970,7 +4896,7 @@ class Player26 extends StatelessWidget {
                         top: 68,
                         left: 100,
                         child: const Text(
-                          '수비/작전코치',
+                          '작전/수비코치',
                           style: TextStyle(fontSize: 15, color: Colors.black),
                         ),
                       ),
@@ -6034,7 +4960,7 @@ class Player26 extends StatelessWidget {
                         top: 228,
                         left: 100,
                         child: const Text(
-                          '2022년',
+                          '2011년',
                           style: TextStyle(fontSize: 15, color: Colors.black),
                         ),
                       ),
@@ -6062,7 +4988,7 @@ class Player26 extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                        top: 95,
+                        top: 85,
                         left: 20,
                         child: Text(
                           '한화 이글스 (2020~2021)',
@@ -6070,10 +4996,1263 @@ class Player26 extends StatelessWidget {
                         ),
                       ),
                       Positioned(
+                        top: 115,
+                        left: 20,
+                        child: Text(
+                          '두산 베어스 2군 작전/수비코치 (2022~)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Player23 extends StatelessWidget {
+  const Player23({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.black),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: true,
+      ),
+      extendBodyBehindAppBar: true,
+      body: Stack(
+        children: [
+          Positioned(
+            top: -90,
+            left: 55,
+            child: Image.asset(
+              'assets/bears2023.PNG',
+              width: 250,
+              height: 500,
+            ),
+          ),
+          Positioned(
+            top: 70,
+            right: 0,
+            child: Image.asset(
+              'assets/Player23/Coach/kyoungtaek2.PNG',
+              height: 220,
+            ),
+          ),
+          const Positioned(
+            top: 207,
+            left: 10,
+            child: Text(
+              '72',
+              style: TextStyle(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 207, 18, 5)),
+            ),
+          ),
+          const Positioned(
+            top: 240,
+            left: 10,
+            child: Text(
+              '조경택',
+              style: TextStyle(
+                  fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 1),
+            ),
+          ),
+          const Positioned(
+            top: 263,
+            left: 12,
+            child: Text(
+              '배터리코치',
+              style: TextStyle(fontSize: 15, color: Colors.grey),
+            ),
+          ),
+          Positioned(
+            top: 290,
+            child: Container(
+              padding: const EdgeInsets.all(8.0),
+              color: Colors.white,
+              width: 390,
+              height: 2000,
+              child: ContainedTabBarView(
+                tabs: const [
+                  Text(
+                    '코칭스탭 정보',
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    '주요경력',
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
+                  ),
+                ],
+                views: [
+                  Stack(
+                    children: [
+                      Positioned(
+                        top: 15,
+                        left: 20,
+                        child: const Text(
+                          '코칭스텝 소개',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Positioned(
+                        top: 70,
+                        left: 20,
+                        child: const Text(
+                          '포지션',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 68,
+                        left: 100,
+                        child: const Text(
+                          '배터리코치',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 110,
+                        left: 20,
+                        child: const Text(
+                          '생년월일',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 108,
+                        left: 100,
+                        child: const Text(
+                          '1970년 07월 15일',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 150,
+                        left: 20,
+                        child: const Text(
+                          '신장/체중',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 148,
+                        left: 100,
+                        child: const Text(
+                          '183cm / 95kg',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 190,
+                        left: 20,
+                        child: const Text(
+                          '출신학교',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 188,
+                        left: 100,
+                        child: const Text(
+                          '중앙초 - 원주중 - 원주고',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 230,
+                        left: 20,
+                        child: const Text(
+                          '입단년도',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 228,
+                        left: 100,
+                        child: const Text(
+                          '2015년',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Stack(
+                    children: [
+                      Positioned(
+                        top: 15,
+                        left: 20,
+                        child: Text(
+                          '주요경력 소개',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Positioned(
+                        top: 55,
+                        left: 20,
+                        child: Text(
+                          '태평양 돌핀스 (1989)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 85,
+                        left: 20,
+                        child: Text(
+                          'OB 베어스 (1992~1995)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 115,
+                        left: 20,
+                        child: Text(
+                          '한화 이글스 (1995~2003)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 145,
+                        left: 20,
+                        child: Text(
+                          '한화 이글스 배터리코치(2005~2014)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 175,
+                        left: 20,
+                        child: Text(
+                          '두산 베어스 배터리코치(2015~)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Player24 extends StatelessWidget {
+  const Player24({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.black),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: true,
+      ),
+      extendBodyBehindAppBar: true,
+      body: Stack(
+        children: [
+          Positioned(
+            top: -90,
+            left: 55,
+            child: Image.asset(
+              'assets/bears2023.PNG',
+              width: 250,
+              height: 500,
+            ),
+          ),
+          Positioned(
+            top: 70,
+            right: 0,
+            child: Image.asset(
+              'assets/Player23/Coach/kwangwoo2.PNG',
+              height: 220,
+            ),
+          ),
+          const Positioned(
+            top: 207,
+            left: 10,
+            child: Text(
+              '87',
+              style: TextStyle(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 207, 18, 5)),
+            ),
+          ),
+          const Positioned(
+            top: 240,
+            left: 10,
+            child: Text(
+              '이광우',
+              style: TextStyle(
+                  fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 1),
+            ),
+          ),
+          const Positioned(
+            top: 263,
+            left: 12,
+            child: Text(
+              '트레이닝코치',
+              style: TextStyle(fontSize: 15, color: Colors.grey),
+            ),
+          ),
+          Positioned(
+            top: 290,
+            child: Container(
+              padding: const EdgeInsets.all(8.0),
+              color: Colors.white,
+              width: 390,
+              height: 2000,
+              child: ContainedTabBarView(
+                tabs: const [
+                  Text(
+                    '코칭스탭 정보',
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    '주요경력',
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
+                  ),
+                ],
+                views: [
+                  Stack(
+                    children: [
+                      Positioned(
+                        top: 15,
+                        left: 20,
+                        child: const Text(
+                          '코칭스텝 소개',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Positioned(
+                        top: 70,
+                        left: 20,
+                        child: const Text(
+                          '포지션',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 68,
+                        left: 100,
+                        child: const Text(
+                          '트레이닝코치',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 110,
+                        left: 20,
+                        child: const Text(
+                          '생년월일',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 108,
+                        left: 100,
+                        child: const Text(
+                          '1965년 03월 14일',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 150,
+                        left: 20,
+                        child: const Text(
+                          '신장/체중',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 148,
+                        left: 100,
+                        child: const Text(
+                          '182cm / 83kg',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 190,
+                        left: 20,
+                        child: const Text(
+                          '출신학교',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 188,
+                        left: 100,
+                        child: const Text(
+                          '군산초 - 군산중 - 군산상고 - 원광대',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 230,
+                        left: 20,
+                        child: const Text(
+                          '입단년도',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 228,
+                        left: 100,
+                        child: const Text(
+                          '2014년',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Stack(
+                    children: [
+                      Positioned(
+                        top: 15,
+                        left: 20,
+                        child: Text(
+                          '주요경력 소개',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Positioned(
+                        top: 55,
+                        left: 20,
+                        child: Text(
+                          '해태 타이거즈 (1989~1991)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 95,
+                        left: 20,
+                        child: Text(
+                          'OB-두산 베어스 (1992~2001)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
                         top: 135,
                         left: 20,
                         child: Text(
-                          '두산 베어스 2군 수비·작전코치 (2022~)',
+                          'LG 트윈스 (2002)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 175,
+                        left: 20,
+                        child: Text(
+                          'KIA 타이거즈 투수코치 (2003~2007)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 215,
+                        left: 20,
+                        child: Text(
+                          'KIA 타이거즈 재활코치 (2007~2009)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 255,
+                        left: 20,
+                        child: Text(
+                          '두산 베어스 투수코치 (2014~2017)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 295,
+                        left: 20,
+                        child: Text(
+                          '두산 베어스 2군 트레이닝 코치 (2018~)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Player25 extends StatelessWidget {
+  const Player25({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.black),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: true,
+      ),
+      extendBodyBehindAppBar: true,
+      body: Stack(
+        children: [
+          Positioned(
+            top: -90,
+            left: 55,
+            child: Image.asset(
+              'assets/bears2023.PNG',
+              width: 250,
+              height: 500,
+            ),
+          ),
+          Positioned(
+            top: 70,
+            right: 0,
+            child: Image.asset(
+              'assets/Player23/Coach/jinsoo2.PNG',
+              height: 220,
+            ),
+          ),
+          const Positioned(
+            top: 207,
+            left: 10,
+            child: Text(
+              '80',
+              style: TextStyle(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 207, 18, 5)),
+            ),
+          ),
+          const Positioned(
+            top: 240,
+            left: 10,
+            child: Text(
+              '김진수',
+              style: TextStyle(
+                  fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 1),
+            ),
+          ),
+          const Positioned(
+            top: 263,
+            left: 12,
+            child: Text(
+              '재활코치',
+              style: TextStyle(fontSize: 15, color: Colors.grey),
+            ),
+          ),
+          Positioned(
+            top: 290,
+            child: Container(
+              padding: const EdgeInsets.all(8.0),
+              color: Colors.white,
+              width: 390,
+              height: 2000,
+              child: ContainedTabBarView(
+                tabs: const [
+                  Text(
+                    '코칭스탭 정보',
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    '주요경력',
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
+                  ),
+                ],
+                views: [
+                  Stack(
+                    children: [
+                      Positioned(
+                        top: 15,
+                        left: 20,
+                        child: const Text(
+                          '코칭스텝 소개',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Positioned(
+                        top: 70,
+                        left: 20,
+                        child: const Text(
+                          '포지션',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 68,
+                        left: 100,
+                        child: const Text(
+                          '투수코치',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 110,
+                        left: 20,
+                        child: const Text(
+                          '생년월일',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 108,
+                        left: 100,
+                        child: const Text(
+                          '1979년 04월 19일',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 150,
+                        left: 20,
+                        child: const Text(
+                          '신장/체중',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 148,
+                        left: 100,
+                        child: const Text(
+                          '180cm / 90kg',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 190,
+                        left: 20,
+                        child: const Text(
+                          '출신학교',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 188,
+                        left: 100,
+                        child: const Text(
+                          '양정초 - 개성중 - 경남고',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 230,
+                        left: 20,
+                        child: const Text(
+                          '입단년도',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 228,
+                        left: 100,
+                        child: const Text(
+                          '2012년',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Stack(
+                    children: [
+                      Positioned(
+                        top: 15,
+                        left: 20,
+                        child: Text(
+                          '주요경력 소개',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Positioned(
+                        top: 55,
+                        left: 20,
+                        child: Text(
+                          '롯데 자이언츠 (1998~2006)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 95,
+                        left: 20,
+                        child: Text(
+                          '두산 베어스 (2006~2009)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 135,
+                        left: 20,
+                        child: Text(
+                          '상무 피닉스 야구단 배터리코치 (2010~2011)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 175,
+                        left: 20,
+                        child: Text(
+                          '두산 베어스 배터리코치 (2012~)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Player26 extends StatelessWidget {
+  const Player26({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.black),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: true,
+      ),
+      extendBodyBehindAppBar: true,
+      body: Stack(
+        children: [
+          Positioned(
+            top: -90,
+            left: 55,
+            child: Image.asset(
+              'assets/bears2023.PNG',
+              width: 250,
+              height: 500,
+            ),
+          ),
+          Positioned(
+            top: 70,
+            right: 0,
+            child: Image.asset(
+              'assets/Player23/Coach/seokcheon2.PNG',
+              height: 220,
+            ),
+          ),
+          const Positioned(
+            top: 207,
+            left: 10,
+            child: Text(
+              '86',
+              style: TextStyle(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 207, 18, 5)),
+            ),
+          ),
+          const Positioned(
+            top: 240,
+            left: 10,
+            child: Text(
+              '강석천',
+              style: TextStyle(
+                  fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 1),
+            ),
+          ),
+          const Positioned(
+            top: 263,
+            left: 12,
+            child: Text(
+              '재활코치',
+              style: TextStyle(fontSize: 15, color: Colors.grey),
+            ),
+          ),
+          Positioned(
+            top: 290,
+            child: Container(
+              padding: const EdgeInsets.all(8.0),
+              color: Colors.white,
+              width: 390,
+              height: 2000,
+              child: ContainedTabBarView(
+                tabs: const [
+                  Text(
+                    '코칭스탭 정보',
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    '주요경력',
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
+                  ),
+                ],
+                views: [
+                  Stack(
+                    children: [
+                      Positioned(
+                        top: 15,
+                        left: 20,
+                        child: const Text(
+                          '코칭스텝 소개',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Positioned(
+                        top: 70,
+                        left: 20,
+                        child: const Text(
+                          '포지션',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 68,
+                        left: 100,
+                        child: const Text(
+                          '재활코치',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 110,
+                        left: 20,
+                        child: const Text(
+                          '생년월일',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 108,
+                        left: 100,
+                        child: const Text(
+                          '1967년 12월 07일',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 150,
+                        left: 20,
+                        child: const Text(
+                          '신장/체중',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 148,
+                        left: 100,
+                        child: const Text(
+                          '185cm / 87kg',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 190,
+                        left: 20,
+                        child: const Text(
+                          '출신학교',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 188,
+                        left: 100,
+                        child: const Text(
+                          '신탄진초 - 한밭중 - 대전고 - 인하대',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 230,
+                        left: 20,
+                        child: const Text(
+                          '입단년도',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 228,
+                        left: 100,
+                        child: const Text(
+                          '2015년',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Stack(
+                    children: [
+                      Positioned(
+                        top: 15,
+                        left: 20,
+                        child: Text(
+                          '주요경력 소개',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Positioned(
+                        top: 55,
+                        left: 20,
+                        child: Text(
+                          '빙그레·한화 이글스 (1989~2003)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 95,
+                        left: 20,
+                        child: Text(
+                          '한화 이글스 수비코치(2005~2008)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 135,
+                        left: 20,
+                        child: Text(
+                          '한화 이글스 타격코치 (2009~2013)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 175,
+                        left: 20,
+                        child: Text(
+                          '한화 이글스 수비코치 (2013~2014)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 215,
+                        left: 20,
+                        child: Text(
+                          '두산 베어스 수비코치 (2015~2017)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 255,
+                        left: 20,
+                        child: Text(
+                          '두산 베어스 타격코치 (2017)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 295,
+                        left: 20,
+                        child: Text(
+                          '두산 베어스 2군감독(2018~2019)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 335,
+                        left: 20,
+                        child: Text(
+                          '두산 베어스 1군 수석코치 (2019~2022)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 375,
+                        left: 20,
+                        child: Text(
+                          '두산 베어스 잔류군 재활코치 (2023~)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Player261 extends StatelessWidget {
+  const Player261({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.black),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: true,
+      ),
+      extendBodyBehindAppBar: true,
+      body: Stack(
+        children: [
+          Positioned(
+            top: -90,
+            left: 55,
+            child: Image.asset(
+              'assets/bears2023.PNG',
+              width: 250,
+              height: 500,
+            ),
+          ),
+          Positioned(
+            top: 70,
+            right: 0,
+            child: Image.asset(
+              'assets/Player23/Coach/jaesin2.PNG',
+              height: 220,
+            ),
+          ),
+          const Positioned(
+            top: 207,
+            left: 10,
+            child: Text(
+              '70',
+              style: TextStyle(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 207, 18, 5)),
+            ),
+          ),
+          const Positioned(
+            top: 240,
+            left: 10,
+            child: Text(
+              '유재신',
+              style: TextStyle(
+                  fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 1),
+            ),
+          ),
+          const Positioned(
+            top: 263,
+            left: 12,
+            child: Text(
+              '재활코치',
+              style: TextStyle(fontSize: 15, color: Colors.grey),
+            ),
+          ),
+          Positioned(
+            top: 290,
+            child: Container(
+              padding: const EdgeInsets.all(8.0),
+              color: Colors.white,
+              width: 390,
+              height: 2000,
+              child: ContainedTabBarView(
+                tabs: const [
+                  Text(
+                    '코칭스탭 정보',
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    '주요경력',
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
+                  ),
+                ],
+                views: [
+                  Stack(
+                    children: [
+                      Positioned(
+                        top: 15,
+                        left: 20,
+                        child: const Text(
+                          '코칭스텝 소개',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Positioned(
+                        top: 70,
+                        left: 20,
+                        child: const Text(
+                          '포지션',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 68,
+                        left: 100,
+                        child: const Text(
+                          '재활코치',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 110,
+                        left: 20,
+                        child: const Text(
+                          '생년월일',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 108,
+                        left: 100,
+                        child: const Text(
+                          '1987년 11월 21일',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 150,
+                        left: 20,
+                        child: const Text(
+                          '신장/체중',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 148,
+                        left: 100,
+                        child: const Text(
+                          '179cm / 78kg',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 190,
+                        left: 20,
+                        child: const Text(
+                          '출신학교',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 188,
+                        left: 100,
+                        child: const Text(
+                          '부산사직초 - 부산사직중 - 북일고',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                      Positioned(
+                        top: 230,
+                        left: 20,
+                        child: const Text(
+                          '입단년도',
+                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        top: 228,
+                        left: 100,
+                        child: const Text(
+                          '2021년',
+                          style: TextStyle(fontSize: 15, color: Colors.black),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Stack(
+                    children: [
+                      Positioned(
+                        top: 15,
+                        left: 20,
+                        child: Text(
+                          '주요경력 소개',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Positioned(
+                        top: 55,
+                        left: 20,
+                        child: Text(
+                          '현대 유니콘스 (2006~2007)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 95,
+                        left: 20,
+                        child: Text(
+                          '우리-서울-넥센 히어로즈 (2008~2017)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 135,
+                        left: 20,
+                        child: Text(
+                          'KIA 타이거즈 (2017~2020)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 175,
+                        left: 20,
+                        child: Text(
+                          '두산 베어스 2군 수비·작전코치 (2021)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 215,
+                        left: 20,
+                        child: Text(
+                          '두산 베어스 1군 주루코치 (2022)',
+                          style: TextStyle(fontSize: 14, letterSpacing: 0.5),
+                        ),
+                      ),
+                      Positioned(
+                        top: 255,
+                        left: 20,
+                        child: Text(
+                          '두산 베어스 2군 작전/주루코치 (2023~)',
                           style: TextStyle(fontSize: 14, letterSpacing: 0.5),
                         ),
                       ),

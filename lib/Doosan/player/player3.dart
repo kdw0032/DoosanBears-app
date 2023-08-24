@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:contained_tab_bar_view/contained_tab_bar_view.dart';
-import 'package:flutter_application_1/Doosan/src/pages/setting/setting.dart';
+import 'package:flutter_application_1/Doosan/pages/setting/setting.dart';
 import 'package:transition/transition.dart';
 
 class Player27 extends StatelessWidget {

@@ -1,9 +1,9 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Information/2020.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Information/2021.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Information/2022.dart';
+import 'package:flutter_application_1/Doosan/pages/Information/2020.dart';
+import 'package:flutter_application_1/Doosan/pages/Information/2021.dart';
+import 'package:flutter_application_1/Doosan/pages/Information/2022.dart';
 import 'package:transition/transition.dart';
 
 class Season20202 extends StatelessWidget {

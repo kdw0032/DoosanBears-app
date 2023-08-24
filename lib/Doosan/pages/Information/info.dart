@@ -3,10 +3,10 @@
 import 'package:contained_tab_bar_view/contained_tab_bar_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Doosan/bottomnav.dart';
-import 'package:flutter_application_1/Doosan/src/pages/BI/logo.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Information/story.dart';
-import 'package:flutter_application_1/Doosan/src/pages/setting/setting.dart';
-import 'package:flutter_application_1/Doosan/src/pages/ticket/BearsHome.dart';
+import 'package:flutter_application_1/Doosan/pages/BI/logo.dart';
+import 'package:flutter_application_1/Doosan/pages/Information/story.dart';
+import 'package:flutter_application_1/Doosan/pages/setting/setting.dart';
+import 'package:flutter_application_1/Doosan/pages/ticket/BearsHome.dart';
 import 'package:transition/transition.dart';
 
 class Info extends StatelessWidget {

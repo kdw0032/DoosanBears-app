@@ -10,8 +10,8 @@ import 'package:flutter_application_1/Doosan/Youtube/youtube3.dart';
 import 'package:flutter_application_1/Doosan/Youtube/youtube4.dart';
 import 'package:flutter_application_1/Doosan/player/playerUI.dart';
 import 'package:flutter_application_1/Doosan/Youtube/youtube1.dart';
-import 'package:flutter_application_1/Doosan/src/pages/media/media.dart';
-import 'package:flutter_application_1/Doosan/src/pages/staff/staff.dart';
+import 'package:flutter_application_1/Doosan/pages/media/media.dart';
+import 'package:flutter_application_1/Doosan/pages/staff/staff.dart';
 import 'package:flutter_application_1/root.dart';
 import 'package:get/get.dart';
 import 'package:kakao_flutter_sdk/kakao_flutter_sdk.dart';
@@ -96,7 +96,7 @@ class _BearsHomeState extends State<BearsHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 23, 3, 59),
+      backgroundColor: const Color.fromARGB(255, 23, 3, 59),
       appBar: AppBar(
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

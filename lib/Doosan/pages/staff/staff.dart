@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Doosan/Stadium/stadium.dart';
 import 'package:flutter_application_1/Doosan/player/playerUI.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Cheer/cheer.dart';
+import 'package:flutter_application_1/Doosan/pages/Cheer/cheer.dart';
 import 'package:get/get.dart';
 
 class MyStaff extends StatelessWidget {

@@ -6,8 +6,8 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_application_1/Doosan/Calender/Calender.dart';
 import 'package:flutter_application_1/Doosan/player/playerUI.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Cheer/cheer.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Information/info.dart';
+import 'package:flutter_application_1/Doosan/pages/Cheer/cheer.dart';
+import 'package:flutter_application_1/Doosan/pages/Information/info.dart';
 import 'package:transition/transition.dart';
 import 'package:url_launcher/url_launcher.dart';
 

@@ -3,6 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Doosan/bottomnav.dart';
 import 'package:flutter_application_1/Doosan/screen/LoginSignUpScreen.dart';
+import 'package:flutter_application_1/auth/page/Login_Page.dart';
+import 'package:flutter_application_1/auth/main_page.dart';
 import 'package:get/get.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       // initialBinding: InitBindings(),
-      home: const LoginSignupScreen(),
+      home: const MainPage(),
     );
   }
 }

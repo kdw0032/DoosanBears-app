@@ -5,8 +5,8 @@ import 'package:flutter_application_1/Doosan/BEARSTALK/notice_board.dart';
 import 'package:flutter_application_1/Doosan/Calender/Calender.dart';
 import 'package:flutter_application_1/Doosan/Stadium/stadium.dart';
 import 'package:flutter_application_1/Doosan/screen/chat_screen.dart';
-import 'package:flutter_application_1/Doosan/src/pages/setting/setting.dart';
-import 'package:flutter_application_1/Doosan/src/pages/ticket/BearsHome.dart';
+import 'package:flutter_application_1/Doosan/pages/setting/setting.dart';
+import 'package:flutter_application_1/Doosan/pages/ticket/BearsHome.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 class BottomNav extends StatefulWidget {
@@ -27,11 +27,6 @@ class _BottomNavState extends State<BottomNav> {
     const NoticeBoard(),
     const Setting(),
   ];
-
-  @override
-  void initState() {
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {

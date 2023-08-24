@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Cheer/%EA%B3%A0%EA%B0%80%EB%B9%88.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Cheer/%EA%B9%80%EC%86%8C%EB%A6%BC.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Cheer/%EA%B9%80%EC%88%98%ED%98%84.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Cheer/%EB%B0%95%EC%84%B1%EC%9D%80.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Cheer/%EC%84%9C%ED%98%84%EC%88%99.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Cheer/%EC%95%88%ED%98%9C%EC%A7%80.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Cheer/%EC%9D%B4%EB%82%98%EA%B2%BD.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Cheer/%EC%9C%A0%EC%B0%BD%EA%B7%BC.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Cheer/%EC%9D%B4%EB%8B%A4%EC%98%81.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Cheer/%EC%A0%95%ED%9D%AC%EC%A0%95.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Cheer/%EC%B2%9C%EC%98%A8%EC%9C%A0.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Cheer/%ED%95%9C%EC%9E%AC%EA%B6%8C.dart';
+import 'package:flutter_application_1/Doosan/pages/Cheer/%EA%B3%A0%EA%B0%80%EB%B9%88.dart';
+import 'package:flutter_application_1/Doosan/pages/Cheer/%EA%B9%80%EC%86%8C%EB%A6%BC.dart';
+import 'package:flutter_application_1/Doosan/pages/Cheer/%EA%B9%80%EC%88%98%ED%98%84.dart';
+import 'package:flutter_application_1/Doosan/pages/Cheer/%EB%B0%95%EC%84%B1%EC%9D%80.dart';
+import 'package:flutter_application_1/Doosan/pages/Cheer/%EC%84%9C%ED%98%84%EC%88%99.dart';
+import 'package:flutter_application_1/Doosan/pages/Cheer/%EC%95%88%ED%98%9C%EC%A7%80.dart';
+import 'package:flutter_application_1/Doosan/pages/Cheer/%EC%9D%B4%EB%82%98%EA%B2%BD.dart';
+import 'package:flutter_application_1/Doosan/pages/Cheer/%EC%9C%A0%EC%B0%BD%EA%B7%BC.dart';
+import 'package:flutter_application_1/Doosan/pages/Cheer/%EC%9D%B4%EB%8B%A4%EC%98%81.dart';
+import 'package:flutter_application_1/Doosan/pages/Cheer/%EC%A0%95%ED%9D%AC%EC%A0%95.dart';
+import 'package:flutter_application_1/Doosan/pages/Cheer/%EC%B2%9C%EC%98%A8%EC%9C%A0.dart';
+import 'package:flutter_application_1/Doosan/pages/Cheer/%ED%95%9C%EC%9E%AC%EA%B6%8C.dart';
 import 'package:transition/transition.dart';
 
 class CheerPage extends StatelessWidget {

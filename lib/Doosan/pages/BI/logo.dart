@@ -1,8 +1,8 @@
 import 'package:contained_tab_bar_view/contained_tab_bar_view.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Doosan/src/pages/BI/new.dart';
-import 'package:flutter_application_1/Doosan/src/pages/BI/oldlogo1.dart';
-import 'package:flutter_application_1/Doosan/src/pages/BI/oldlogo2.dart';
+import 'package:flutter_application_1/Doosan/pages/BI/new.dart';
+import 'package:flutter_application_1/Doosan/pages/BI/oldlogo1.dart';
+import 'package:flutter_application_1/Doosan/pages/BI/oldlogo2.dart';
 
 class LogoPage extends StatelessWidget {
   const LogoPage({Key? key}) : super(key: key);

@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter_application_1/Doosan/src/pages/explore/explote_Detail_Page.dart';
+import 'package:flutter_application_1/Doosan/pages/explore/explote_Detail_Page.dart';
 import 'package:get/get.dart';
 
 class Setting2 extends StatelessWidget {

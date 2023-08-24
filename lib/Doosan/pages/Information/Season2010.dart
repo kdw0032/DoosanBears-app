@@ -1,11 +1,11 @@
 // ignore_for_file: file_names, unused_import
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Information/2017.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Information/2018.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Information/2019.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Information/2020.dart';
-import 'package:flutter_application_1/Doosan/src/pages/Information/2021.dart';
+import 'package:flutter_application_1/Doosan/pages/Information/2017.dart';
+import 'package:flutter_application_1/Doosan/pages/Information/2018.dart';
+import 'package:flutter_application_1/Doosan/pages/Information/2019.dart';
+import 'package:flutter_application_1/Doosan/pages/Information/2020.dart';
+import 'package:flutter_application_1/Doosan/pages/Information/2021.dart';
 import 'package:transition/transition.dart';
 
 class Season2010 extends StatelessWidget {
